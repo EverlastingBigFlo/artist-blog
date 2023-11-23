@@ -7,55 +7,86 @@
 
 /* nav styling */
 
-.navBg{
+.navBg {
     background-color: #C0C6B9;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 101px;
 }
-.navBg .logo a{
+
+.navBg .logo a {
     text-decoration: none;
-   font-size: 50px;
-   color: #49676E;
+    font-size: 50px;
+    color: #49676E;
 }
 
-.navBg .cont ul{
+.navBg .logo a:hover {
+    color: black;
+}
+
+.navBg .cont ul {
     display: flex;
     gap: 45px;
     list-style: none;
 }
 
-.navBg .cont ul a{
+.navBg .cont li {
+    position: relative;
+}
+
+.navBg .cont a {
     text-decoration: none;
     color: #49676E;
     font-size: 25px;
 }
+
+.navBg .cont a:hover {
+    color: black;
+}
+
+.navBg .cont a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #49676E;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.navBg .cont li:hover a::after,
+.navBg .cont li.active a::after {
+    transform: scaleX(1); 
+}
+
+
 
 
 /* sideBar styling */
 .SideNav {
     width: 30px;
     padding: 20px;
-    /* position: fixed; */
-    left: 0;
-    height: 834px; 
+    position: fixed;
+    right: 0;
     transform: rotate(90deg); 
     transform-origin: top right;
+    top: 27rem;
     display: flex;
-    justify-content: space-between;
+    gap: 15rem;
+    font-size: 25px;
+    padding: 5rem;
 }
 
-/* .courier{
-    display: flex;
-    justify-content: space-between;
-} */
 
 .sideCont ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+    gap: 5rem;
 }
 
 .sideCont ul li {
@@ -65,12 +96,12 @@
 
 /* Optional: Style links */
 .SideNav a {
+    color: #49676E;
     text-decoration: none;
-    color: #333;
 }
 
 .SideNav a:hover {
-    color: #007bff; 
+    color: black; 
 }
 
 
