@@ -33,6 +33,48 @@
 }
 
 
+/* sideBar styling */
+.SideNav {
+    width: 30px;
+    padding: 20px;
+    /* position: fixed; */
+    left: 0;
+    height: 834px; 
+    transform: rotate(90deg); 
+    transform-origin: top right;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .courier{
+    display: flex;
+    justify-content: space-between;
+} */
+
+.sideCont ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.sideCont ul li {
+    margin-bottom: 10px;
+}
+
+
+/* Optional: Style links */
+.SideNav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.SideNav a:hover {
+    color: #007bff; 
+}
+
+
+
 
 /* footer styling */
 
@@ -89,3 +131,6 @@
     justify-content: center;
     align-items: center;
 }
+
+
+

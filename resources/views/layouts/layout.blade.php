@@ -13,7 +13,7 @@
 </head>
 <body>
     @include('includes.nav')
-
+    @include('includes.side_nav')
         @yield('content')
 
     @include('includes.footer')
