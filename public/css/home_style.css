@@ -1,18 +1,43 @@
-.heroSection{
+.heroSection {
     width: 72.875rem;
     height: 39rem;
     margin: auto;
     display: flex;
     justify-content: center;
 }
-.heroSection img{
+.heroSection img {
     margin: auto;
 }
 
-.anotherSection{
+.anotherSection {
     width: 72.875rem;
     height: 32.5rem;
-    margin: auto;
     display: flex;
+    align-items: center;
     justify-content: center;
+    gap: 3rem;
+    margin: auto;
+}
+
+.anotherSection img {
+    width: 472px;
+    height: 385px;
+}
+
+.meanSection{
+    width: 72.875rem;
+    height: 327px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 3rem; */
+    margin: auto;
+    border: 1px solid black;
+}
+
+.meanSection p{
+    width: 1043px;
+    font-size: 20px;
+    text-align: justify;
 }
