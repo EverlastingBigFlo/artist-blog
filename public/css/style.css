@@ -36,7 +36,24 @@
 /* footer styling */
 
 .footerBg{
-    width: 1366;
     height: 186;
     background-color: #C0C6B9;
+}
+
+.footerBg .footerCont{
+    height: 63;
+}
+
+.footerBg .footerCont ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 100px;
+    font-size: 20px;
+    color: #49676E;
+}
+
+.footerBg .footerCont ul a{
+    text-decoration: none;
+    color: #49676E;
 }
