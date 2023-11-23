@@ -59,18 +59,32 @@
 }
 
 
+
+/* contact section */
 .footerBg .footerContact{
-    height: 89;
+    height: 89px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footerBg .footerContact ul{
     display: flex;
     list-style: none;
-    justify-content: center;
-    /* gap: 100px; */
+    gap: 50px;
     color: #49676E;
 }
 
-.footerBg .footerContact ul a{
+.footerBg .footerContact ul a img{
     width: 20px;
+    height: 15.91px;
+}
+
+/* copyright styling */
+.footerBg .copyright{
+    color: #49676E;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

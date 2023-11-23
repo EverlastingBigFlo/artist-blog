@@ -17,4 +17,8 @@
             <li><a href="#"><img src="{{asset('icons/fbIcon.png')}}" alt="fb contact"></a></li>
         </ul>
     </div>
+
+    <div class="copyright">
+        <span>copyright--2023</span>
+    </div>
 </div>
