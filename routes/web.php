@@ -20,3 +20,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [IndexCntroller::class,'index'])->name('index');
 
+Route::get('/home', [IndexCntroller::class, 'home'])->name('home');

@@ -1,0 +1,18 @@
+.heroSection{
+    width: 72.875rem;
+    height: 39rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.heroSection img{
+    margin: auto;
+}
+
+.anotherSection{
+    width: 72.875rem;
+    height: 32.5rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
