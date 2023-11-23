@@ -8,5 +8,5 @@
             <li><a href="#">Shop</a></li>
         </ul>
     </div>
-    <div class="addToCart"> <img src="/icons/icons8-favorite-cart-80 1.png" alt="Add To Cart Icon"></div>
+    <div class="addToCart"> <img src="{{asset('/icons/icons8-favorite-cart-80 1.png')}}" alt="Add To Cart Icon"></div>
 </div>

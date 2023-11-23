@@ -57,3 +57,20 @@
     text-decoration: none;
     color: #49676E;
 }
+
+
+.footerBg .footerContact{
+    height: 89;
+}
+
+.footerBg .footerContact ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    /* gap: 100px; */
+    color: #49676E;
+}
+
+.footerBg .footerContact ul a{
+    width: 20px;
+}
