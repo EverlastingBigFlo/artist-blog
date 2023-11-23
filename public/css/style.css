@@ -1,0 +1,32 @@
+*{
+    font-family: 'Cormorant Garamond', serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+/* nav styling */
+
+.navBg{
+    background-color: #C0C6B9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 101px;
+}
+.navBg .logo{
+   font-size: 50px;
+   color: #49676E;
+}
+
+.navBg .cont ul{
+    display: flex;
+    gap: 45px;
+    list-style: none;
+}
+
+.navBg .cont ul a{
+    text-decoration: none;
+    color: #49676E;
+    font-size: 25px;
+}
