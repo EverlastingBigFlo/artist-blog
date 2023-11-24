@@ -50,9 +50,11 @@
 
             <div class="form">
                 <div class="emailBtn">
-                    <input type="email" name="email" placeholder="Email">
+                    <input type="email" name="email" placeholder="Email" id="emailInput">
                     <button>Subscribe</button>
                 </div>
+
+                <input type="email" name="email" placeholder="Message" id="message">
             </div>
         </div>
     </section>
