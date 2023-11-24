@@ -19,11 +19,18 @@
             box-sizing: border-box;
         }
 
-        .navBg {
+        .welcomePage{
+            max-width: 100vw;
+            height: 100vh;
+            display: flex;
+            margin: auto;
+        }
+
+       .welcomePage header .navBg {
             max-heightht: 101px;
         }
 
-        .navBg .logo a {
+        .welcomePage header .navBg .logo a {
             text-decoration: none;
             font-size: 50px;
             color: #49676E;
@@ -32,19 +39,47 @@
             transform: translateY(5rem);
         }
 
-        .navBg .logo a:hover {
+        .welcomePage header .navBg .logo a:hover {
             color: black;
+        }
+
+        .welcomePage .heroSection{
+            position: relative
+            width
+        }
+        .welcomePage .heroSection{
+            display: flex;
+            position: relative
         }
     </style>
 </head>
 
 <body>
+    <div class="welcomePage">
+        {{-- nav --}}
+        <header>
+            <div class="navBg">
+                <div class="logo"><a href="#">LOGO</a></div>
+            </div>
+        </header>
+    
+        {{-- heroSection --}}
 
-    <header>
-        <div class="navBg">
-            <div class="logo"><a href="#">LOGO</a></div>
-        </div>
-    </header>
+        <section>
+            <div class="heroSection">
+                <div class="largeImage">
+                    <img src="{{asset('img/Ellipse 1.png')}}" alt="largeImage">
+                </div>
+                <div class="smallImage">
+                    <img src="{{asset('img/Ellipse 3.png')}}" alt="smallImage">
+                </div>
+                <div class="mediumImage">
+                    <img src="{{asset('img/Ellipse 2.png')}}" alt="mediumImage">
+
+                </div>
+            </div>
+            </section>
+    </div>
 </body>
 
 </html>
