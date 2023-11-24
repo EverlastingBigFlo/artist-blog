@@ -44,12 +44,15 @@
             <h1>
                 NEWSLETTER
             </h1>
-            <h6>
+            <h4>
                 A monthly newsletter keeping you up yo date.
-            </h6>
+            </h4>
 
             <div class="form">
-
+                <div class="emailBtn">
+                    <input type="email" name="email" placeholder="Email">
+                    <button>Subscribe</button>
+                </div>
             </div>
         </div>
     </section>
