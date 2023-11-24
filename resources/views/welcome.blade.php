@@ -24,6 +24,7 @@
             height: 100vh;
             display: flex;
             margin: auto;
+          
         }
 
        .welcomePage header .navBg {
@@ -44,12 +45,23 @@
         }
 
         .welcomePage .heroSection{
-            position: relative
-            width
+            position: relative;
+            max-width:10rem;
+            max-height: 100%;
         }
-        .welcomePage .heroSection{
-            display: flex;
-            position: relative
+        .welcomePage .heroSection .largeImage{
+            position: absolute;
+            transform: translateY(11rem);
+        }
+        .welcomePage .heroSection .mediumImage{
+            position: absolute;
+            left: 27rem;
+            top: 25rem;
+        }
+        .welcomePage .heroSection .smallImage{
+            position: absolute;
+            left: 23rem;
+            top: 4rem;
         }
     </style>
 </head>
