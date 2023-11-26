@@ -20,7 +20,7 @@
         }
         
         .welcomePage{
-            border: 3rem solid black;
+            border: 2.5rem solid black;
             max-width: 100vw;
             height: 100vh;
             display: flex;
@@ -29,14 +29,15 @@
         }
 
        .welcomePage header .navBg {
-            max-heightht: 101px;
+            max-heightht: 100%;
+            margin-top: 4rem;
         }
 
         .welcomePage header .navBg .logo a {
             text-decoration: none;
             font-size: 50px;
             color: #49676E;
-            padding-left: 7rem;
+            padding-left: 5rem;
             padding-top: 5rem;
             transform: translateY(5rem);
         }
