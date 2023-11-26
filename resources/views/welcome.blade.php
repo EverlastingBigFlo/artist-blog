@@ -63,6 +63,22 @@
             left: 23rem;
             top: 4rem;
         }
+        .welcomePage .heroSection .welcomeBtn{
+            position: absolute;
+            left: 37rem;
+            top: 15rem;
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+
+
+        }
+        .welcomePage .heroSection .welcomeBtn a button{
+          background-color: #EAE7DC;
+          border: 4px solid #49676E;
+          border-radius: 10px;
+          padding: 1.4rem 3rem;
+          font-size: 25px;
+          color: #49676ebb;
+        }
     </style>
 </head>
 
@@ -88,6 +104,11 @@
                 <div class="mediumImage">
                     <img src="{{asset('img/Ellipse 2.png')}}" alt="mediumImage">
 
+                </div>
+
+                <div class="welcomeBtn">
+                    <a href="{{asset('/home')}}">
+                    <button>WELCOME</button></a>
                 </div>
             </div>
             </section>
