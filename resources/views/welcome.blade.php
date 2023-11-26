@@ -18,17 +18,17 @@
             margin: 0;
             box-sizing: border-box;
         }
-        
-        .welcomePage{
+
+        .welcomePage {
             border: 2.5rem solid black;
             max-width: 100vw;
             height: 100vh;
             display: flex;
             margin: auto;
-          
+
         }
 
-       .welcomePage header .navBg {
+        .welcomePage header .navBg {
             max-heightht: 100%;
             margin-top: 4rem;
         }
@@ -46,40 +46,45 @@
             color: black;
         }
 
-        .welcomePage .heroSection{
+        .welcomePage .heroSection {
             position: relative;
-            max-width:10rem;
+            max-width: 10rem;
             max-height: 100%;
         }
-        .welcomePage .heroSection .largeImage{
+
+        .welcomePage .heroSection .largeImage {
             position: absolute;
             transform: translateY(11rem);
         }
-        .welcomePage .heroSection .mediumImage{
+
+        .welcomePage .heroSection .mediumImage {
             position: absolute;
             left: 27rem;
             top: 25rem;
         }
-        .welcomePage .heroSection .smallImage{
+
+        .welcomePage .heroSection .smallImage {
             position: absolute;
             left: 23rem;
             top: 4rem;
         }
-        .welcomePage .heroSection .welcomeBtn{
+
+        .welcomePage .heroSection .welcomeBtn {
             position: absolute;
             left: 37rem;
             top: 15rem;
 
 
         }
-        .welcomePage .heroSection .welcomeBtn a button{
-          background-color: #EAE7DC;
-          border: 4px solid #49676E;
-          border-radius: 10px;
-          padding: 1.4rem 3rem;
-          font-size: 25px;
-          color: #49676ebb;
-          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+
+        .welcomePage .heroSection .welcomeBtn a button {
+            background-color: #EAE7DC;
+            border: 4px solid #49676E;
+            border-radius: 10px;
+            padding: 1.4rem 3rem;
+            font-size: 25px;
+            color: #49676ebb;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 
         }
     </style>
@@ -93,28 +98,28 @@
                 <div class="logo"><a href="#">LOGO</a></div>
             </div>
         </header>
-    
+
         {{-- heroSection --}}
 
         <section>
             <div class="heroSection">
                 <div class="largeImage">
-                    <img src="{{asset('img/Ellipse 1.png')}}" alt="largeImage">
+                    <img src="{{ asset('img/Ellipse 1.png') }}" alt="largeImage">
                 </div>
                 <div class="smallImage">
-                    <img src="{{asset('img/Ellipse 3.png')}}" alt="smallImage">
+                    <img src="{{ asset('img/Ellipse 3.png') }}" alt="smallImage">
                 </div>
                 <div class="mediumImage">
-                    <img src="{{asset('img/Ellipse 2.png')}}" alt="mediumImage">
+                    <img src="{{ asset('img/Ellipse 2.png') }}" alt="mediumImage">
 
                 </div>
 
                 <div class="welcomeBtn">
-                    <a href="{{asset('/home')}}">
-                    <button>WELCOME</button></a>
+                    <a href="{{ asset('/home') }}">
+                        <button>WELCOME</button></a>
                 </div>
             </div>
-            </section>
+        </section>
     </div>
 </body>
 
