@@ -18,8 +18,9 @@
             margin: 0;
             box-sizing: border-box;
         }
-
+        
         .welcomePage{
+            border: 3rem solid black;
             max-width: 100vw;
             height: 100vh;
             display: flex;
@@ -67,7 +68,6 @@
             position: absolute;
             left: 37rem;
             top: 15rem;
-            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
 
 
         }
@@ -78,6 +78,8 @@
           padding: 1.4rem 3rem;
           font-size: 25px;
           color: #49676ebb;
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+
         }
     </style>
 </head>
