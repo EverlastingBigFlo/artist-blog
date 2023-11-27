@@ -3,13 +3,13 @@
 @section('content')
     <section>
         <div class="heroSection">
-            <img src="{{ asset('img/Rectangle 4.png') }}" alt="">
+            <img src="{{ asset('asset/img/Rectangle 4.png') }}" alt="">
         </div>
 
         {{-- second image section --}}
         <div class="anotherSection">
-            <img src="{{ asset('img/Rectangle 6.png') }}" alt="">
-            <img src="{{ asset('img/Rectangle 7.png') }}" alt="">
+            <img src="{{ asset('asset/img/Rectangle 6.png') }}" alt="">
+            <img src="{{ asset('asset/img/Rectangle 7.png') }}" alt="">
         </div>
     </section>
 

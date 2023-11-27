@@ -12,9 +12,9 @@
     <div class="footerContact">
         <ul>
             {{-- <li><a href="#"><img src="{{asset('icons/igIcon.jpg')}}" alt="twitter contact"></a></li> --}}
-            <li><a href="#"><img src="{{asset('icons/twitterIcon.png')}}" alt="twitter contact"></a></li>
-            <li><a href="#"><img src="{{asset('icons/gmailIcon.png')}}" alt="gmail contact"></a></li>
-            <li><a href="#"><img src="{{asset('icons/fbIcon.png')}}" alt="fb contact"></a></li>
+            <li><a href="#"><img src="{{asset('asset/icons/twitterIcon.png')}}" alt="twitter contact"></a></li>
+            <li><a href="#"><img src="{{asset('asset/icons/gmailIcon.png')}}" alt="gmail contact"></a></li>
+            <li><a href="#"><img src="{{asset('asset/icons/fbIcon.png')}}" alt="fb contact"></a></li>
         </ul>
     </div>
 

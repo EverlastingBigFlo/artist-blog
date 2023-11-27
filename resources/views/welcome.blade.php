@@ -104,13 +104,13 @@
         <section>
             <div class="heroSection">
                 <div class="largeImage">
-                    <img src="{{ asset('img/Ellipse 1.png') }}" alt="largeImage">
+                    <img src="{{ asset('asset/img/Ellipse 1.png') }}" alt="largeImage">
                 </div>
                 <div class="smallImage">
-                    <img src="{{ asset('img/Ellipse 3.png') }}" alt="smallImage">
+                    <img src="{{ asset('asset/img/Ellipse 3.png') }}" alt="smallImage">
                 </div>
                 <div class="mediumImage">
-                    <img src="{{ asset('img/Ellipse 2.png') }}" alt="mediumImage">
+                    <img src="{{ asset('asset/img/Ellipse 2.png') }}" alt="mediumImage">
 
                 </div>
 
