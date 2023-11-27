@@ -1,3 +1,21 @@
+@php
+  // Get the current path
+  $path = Request::path();
+
+// Remove the trailing slash (if any) and get the last part of the path
+$page = rtrim($path, '/');
+
+// Define an array of active pages
+$activePages = [
+    'home',
+    'galleries',
+    'videos',
+    'shop',
+];
+ 
+@endphp
+
+
 <div class="navBg">
     <div class="logo"><a href="#">LOGO</a></div>
     <div class="cont">
