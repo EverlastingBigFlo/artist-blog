@@ -1,3 +1,5 @@
+// to make the underline stay on a particular page you navigate to
+
 document.addEventListener("DOMContentLoaded", function () {
     // Get the current path
     const path = window.location.pathname;
@@ -20,4 +22,14 @@ document.addEventListener("DOMContentLoaded", function () {
             navLinks[i].classList.add("active");
         }
     }
+});
+
+
+//to make the icon button change to an input when clicked on shop page
+
+const searchIcon = document.getElementById('searchIcon');
+const searchInput = document.getElementById('searchInput');
+
+searchIcon.addEventListener('click', function () {
+    searchInput.classList.toggle('active');
 });
