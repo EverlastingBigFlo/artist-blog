@@ -23,6 +23,18 @@
     .heroWrapper .gridWrapper .firstGrid {
         display: flex;
         gap: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    .heroWrapper .gridWrapper .firstGrid div{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .heroWrapper .gridWrapper .thirdGrid {
+        display: flex;
+        gap: 4rem;
+        margin-top: 3rem;
     }
 </style>
 
@@ -48,6 +60,7 @@
             </div>
             <div class="thirdGrid">
                 <img src="{{ asset('asset/img/Rectangle 20.png') }}" alt="">
+                <img src="{{ asset('asset/img/Rectangle 21.png') }}" alt="">
             </div>
         </div>
     </div>
