@@ -3,18 +3,18 @@
 <style>
     .gridWrapper{
     max-width: 80vw;
-    margin: 0 auto;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-auto-rows: minmax(100px, 200px);
     grid-gap: 30px;
     grid-template-areas:
-        "box1 box1 box1 box1"
-        "box2 box2 box2 box2"
-        "box3 box3 box3 box3"
+        "box1 box1 box2 box2"
+        "box1 box1 box2 box2"
+        "box1 box1 box3 box3"
         "box4 box4 box4 box4"
-        "box5 box5 box5 box5"
-        "box6 box6 box6 box6";
+        "box4 box4 box4 box4"
+        "box5 box5 box6 box6";
     }
 
     .box1{
