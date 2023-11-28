@@ -23,7 +23,7 @@
     .heroWrapper .gridWrapper .firstGrid {
         display: flex;
         gap: 5rem;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
     }
 
     .heroWrapper .gridWrapper .firstGrid div{
