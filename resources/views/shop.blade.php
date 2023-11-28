@@ -1,38 +1,39 @@
 <style>
-   .heroWrapper {
-            min-height: 100vh;
-            max-width: 100vw;
-        }
+    .heroWrapper {
+        min-height: 100vh;
+        max-width: 100vw;
+    }
 
-        .heroWrapper .heroCont {
-            max-width: 80%;
-            margin: auto;
-        }
+    .heroWrapper .heroCont {
+        max-width: 80%;
+        margin: auto;
+    }
 
-        .heroWrapper .heroCont .subHeader {
-            height: 10rem;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
+    .heroWrapper .heroCont .subHeader {
+        height: 10rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 
-        .heroWrapper .heroCont .subHeader p {
-            color: #49676E;
-            font-size: 40px;
-            cursor: pointer;
-            display: block;
-        }
+    .heroWrapper .heroCont .subHeader p {
+        color: #49676E;
+        font-size: 40px;
+    }
 
-        .heroWrapper .heroCont .subHeader input[type="search"] {
-            width: 150px; /* Set the initial width to the desired size */
-            opacity: 1; /* Set the initial opacity to fully visible */
-            display: block; 
-            transition: width 0.5s ease, opacity 0.5s ease;
-        }
+    .heroWrapper .heroCont .subHeader input[type="search"] {
+        width: 150px;
+        opacity: 1;
+        overflow: hidden;
+        transition: max-height 5s ease, opacity 1s ease;
 
-        .heroWrapper .heroCont .subHeader input[type="search"].active {
-            display: none; /* Show the search input when active */
-        }
+    }
+
+    .heroWrapper .heroCont .subHeader input[type="search"].active {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+    }
 </style>
 
 @extends('layouts/layout')
@@ -42,15 +43,15 @@
         <div class="heroCont">
             <div class="subHeader">
                 <p>Shop</p>
-                <div>
+                <div style="display: flex;">
                     <p id="searchIcon">🔍</p>
-                <input type="search" id="searchInput" placeholder="Search" class="active">
+                    <input type="search" id="searchInput" placeholder="Search" class="active">
                 </div>
             </div>
         </div>
     </div>
 
     @push('scripts')
-        <script src="{{asset('/js/script.js')}}"></script>
+        <script src="{{ asset('/js/script.js') }}"></script>
     @endpush
 @endsection
