@@ -12,7 +12,11 @@ class IndexCntroller extends Controller
     public function home(){
         return view('home');
     }
+
     public function galleries(){
         return view('galleries');
     }
+    // public function galleries(){
+    //     return view('galleries');
+    // }
 }
