@@ -18,6 +18,12 @@
     .heroBg .heroSection .firstGrid {
         display: flex;
         gap: 4rem;
+        height: 100%;
+    }
+    .heroBg .heroSection .firstGrid .firstSec {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
 </style>
 
@@ -27,12 +33,12 @@
     <section class="heroBg">
         <div class="header">
             <p>Gallery</p>
-            467
+            
         </div>
         <div class="heroSection">
             <div class="firstGrid">
                 <div><img src="{{ asset('asset/img/Rectangle 16.png') }}" alt=""></div>
-                <div>
+                <div class="firstSec">
                     <div><img src="{{ asset('asset/img/Rectangle 17.png') }}" alt=""></div>
 
                     <div><img src="{{ asset('asset/img/Rectangle 18.png') }}" alt=""></div>
