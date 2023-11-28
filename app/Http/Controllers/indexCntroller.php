@@ -16,7 +16,7 @@ class IndexCntroller extends Controller
     public function galleries(){
         return view('galleries');
     }
-    // public function galleries(){
-    //     return view('galleries');
-    // }
+    public function shop(){
+        return view('shop');
+    }
 }

@@ -22,7 +22,7 @@
             <li><a href="{{ asset('/home') }}">Home</a></li>
             <li><a href="{{asset('/galleries')}}">Galleries</a></li>
             <li><a href="#">Videos</a></li>
-            <li><a href="#">Shop</a></li>
+            <li><a href="{{asset('/shop')}}">Shop</a></li>
         </ul>
     </div>
     <div class="addToCart"><a href="#"><img src="{{ asset('asset/icons/icons8-favorite-cart-80 1.png') }}"

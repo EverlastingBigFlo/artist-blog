@@ -6,7 +6,7 @@
             <li><a href="#">Contact</a></li>
             <li><a href="{{asset('/galleries')}}">Blog</a></li>
             <li><a href="#">Videos</a></li>
-            <li><a href="#">Shop</a></li>
+            <li><a href="{{asset('/shop')}}">Shop</a></li>
         </ul>
     </div>
     <div class="footerContact">
