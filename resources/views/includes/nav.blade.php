@@ -1,16 +1,4 @@
-{{-- @php
-    // Get the current path
-    $path = Request::path();
 
-    
-
-    // Remove the trailing slash (if any) and get the last part of the path
-    $page = rtrim($path, '/');
-
-    // Define an array of active pages
-    $activePages = ['home', 'galleries', 'videos', 'shop'];
-
-@endphp --}}
 
 @php
   // Get the current route name
@@ -32,7 +20,7 @@
     <div class="cont">
         <ul id="navLinks">
             <li><a href="{{ asset('/home') }}">Home</a></li>
-            <li><a href="#">Galleries</a></li>
+            <li><a href="{{asset('/galleries')}}">Galleries</a></li>
             <li><a href="#">Videos</a></li>
             <li><a href="#">Shop</a></li>
         </ul>
@@ -41,6 +29,8 @@
                 alt="Add To Cart Icon"></a></div>
 </div>
 
+@push('scripts')
 <script src="{{ asset('asset/js/script.js') }}" defer></script>
+@endpush
 
 
