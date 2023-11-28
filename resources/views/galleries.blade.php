@@ -1,6 +1,6 @@
 <style>
     .heroWrapper {
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .heroWrapper .gridWrapper {
@@ -27,8 +27,16 @@
 @section('content')
     <div class="heroWrapper">
         <div class="gridWrapper">
-            <div class="subHeader">
-                <p>Gallery</p>
+            <div class="subHeader"><p>Gallery</p></div>
+            
+            <div class="firstGrid">
+                <img src="{{asset('asset/img/Rectangle 16.png')}}" alt="">
+            </div>
+            <div class="secGrid">
+                <img src="{{asset('asset/img/Rectangle 19.png')}}" alt="">
+            </div>
+            <div class="thirdGrid">
+                <img src="{{asset('asset/img/Rectangle 20.png')}}" alt="">
             </div>
         </div>
     </div>
