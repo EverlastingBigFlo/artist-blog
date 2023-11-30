@@ -22,10 +22,10 @@
     }
 
     .heroWrapper .heroCont .subHeader input[type="search"] {
-        width: 150px;
+        width: 20rem;
         opacity: 1;
         overflow: hidden;
-        transition: max-height 5s ease, opacity 1s ease;
+        transition: transla max-height 5s ease, opacity 1s ease;
 
     }
 
@@ -33,6 +33,7 @@
         max-height: 0;
         opacity: 0;
         overflow: hidden;
+        width: 20rem; 
     }
 </style>
 
