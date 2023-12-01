@@ -25,3 +25,5 @@ Route::get('/home', [IndexCntroller::class, 'home'])->name('home');
 Route::get('/galleries', [IndexCntroller::class, 'galleries'])->name('galleries');
 
 Route::get('/shop', [IndexCntroller::class, 'shop'])->name('shop');
+
+Route::get('/register', [IndexCntroller::class, 'register'])->name('register');

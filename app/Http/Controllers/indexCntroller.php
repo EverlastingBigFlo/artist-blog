@@ -19,4 +19,7 @@ class IndexCntroller extends Controller
     public function shop(){
         return view('shop');
     }
+    public function register(){
+        return view('register');
+    }
 }
