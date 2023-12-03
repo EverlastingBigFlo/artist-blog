@@ -29,16 +29,19 @@ form {
     flex-direction: column;
     color: #8692a6;
 }
+
 form h1 {
     font-size: 20px;
     color: white;
 }
+
 form h6 {
     font-size: 15px;
 }
 
 label {
     margin-bottom: 8px;
+    color: #fff; /* Set label text color */
 }
 
 input {
@@ -47,6 +50,14 @@ input {
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: transparent;
+    color: #fff; /* Set input text color */
+    transition: border-color 0.3s; /* Add transition for smooth effect */
+
+}
+
+input:focus {
+    border-color: #49676e;
+    outline: none; 
 }
 
 button {
@@ -93,7 +104,7 @@ hr {
 
 .eye-icon {
     position: absolute;
-    right: 10px; /* Adjust the value to position the eye icon as desired */
+    right: 10px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
