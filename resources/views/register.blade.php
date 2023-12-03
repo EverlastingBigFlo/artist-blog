@@ -17,7 +17,9 @@
         <div id="form-container">
             <form>
                 <div id="formHeader">
-
+                    <h1>
+                        Create an Account  👋
+                    </h1>
                     <h6>
                         Kindly fill in your details to create an account
                     </h6>

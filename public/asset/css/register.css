@@ -29,6 +29,10 @@ form {
     flex-direction: column;
     color: #8692A6;
 }
+form h1 {
+   font-size: 30px;
+   color: white;
+}
 form h6 {
    font-size: 18px;
 }
@@ -42,6 +46,7 @@ input {
     margin-bottom: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    background-color: transparent;
 }
 
 button {
