@@ -17,6 +17,9 @@
     <section>
         <div id="container">
             <div id="form-container">
+                <h1 id="logo">
+                    LOGO
+                </h1>
                 <form>
                     <div id="formHeader">
                         <h1>
