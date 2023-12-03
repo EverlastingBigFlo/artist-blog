@@ -1,50 +1,46 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Register</title>
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="{{asset('asset/css/register.css')}}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-
-        .wrapper {
-            background-color: #202227;
-            width: 100vw;
-            height: 100vh;
-
-        }
-
-        .wrapper .contentWrapper {
-            display: flex;
-            justify-content: space-between;
-            max-width: 80%;
-            margin: auto;
-            max-height: 80%;
-        }
-    </style>
-
 </head>
-
 <body>
-    <section class="wrapper">
-        <div class="contentWrapper">
-            <div class="content">
-                <h1>LOGO</h1>
-            </div>
-            <div class="image">
-                <img src="{{ asset('asset/img/Frame 1 (1).png') }}" alt="image">
-            </div>
-        </div>
-    </section>
-</body>
+   <section>
+    <div id="container">
+        <div id="form-container">
+            <form>
+                <div id="formHeader">
 
+                    <h6>
+                        Kindly fill in your details to create an account
+                    </h6>
+                </div>
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Create Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Register</button>
+            </form>
+            <hr>
+            <button id="google-btn">
+                <img src="google-logo.png" alt="Google Logo" id="google-logo">
+                Register with Google
+            </button>
+        </div>
+        <img id="bgImg" src="{{asset('asset/img/Frame 1 (1).png')}}" alt="Your Image" style="border-radius: 8px;">
+    </div>
+   </section>
+</body>
 </html>
