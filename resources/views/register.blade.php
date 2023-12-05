@@ -20,7 +20,7 @@
                 <h1 id="logo">
                     LOGO
                 </h1>
-                <form action="{{route('registerCommand')}}" method="POST">
+                <form action="{{ route('registerCommand') }}" method="POST">
                     @csrf
                     <div id="formHeader">
                         <h3>
@@ -31,27 +31,30 @@
                         </p>
                     </div>
                     <label for="fullName">Your Full Name*</label>
-                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" value="{{old('fullName')}}">
-                    <small>
-                        @error('name')
-                            {{$message}}
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name"
+                        value="{{ old('fullName') }}">
+                    <small style="color: red">
+                        @error('fullName')
+                            {{ $message }}
                         @enderror
                     </small>
 
                     <label for="email">Email Address*</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email address" value="{{old('email')}}">
-                    <small>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address"
+                        value="{{ old('email') }}">
+                    <small style="color: red">
                         @error('email')
-                            {{$message}}
+                            {{ $message }}
                         @enderror
                     </small>
 
                     <label for="password">Create Password*</label>
                     <div class="password-container">
-                        <input type="password" id="password" name="password" placeholder="Create a password" value="{{old('password')}}">
-                        <small>
+                        <input type="password" id="password" name="password" placeholder="Create a password"
+                            value="{{ old('password') }}">
+                        <small style="color: red">
                             @error('password')
-                                {{$message}}
+                                {{ $message }}
                             @enderror
                         </small>
                         <span class="eye-icon" onclick="togglePasswordVisibility()">
@@ -60,10 +63,11 @@
                     </div>
                     <label for="Confirm password">Confirm Password*</label>
                     <div class="password-container">
-                        <input type="password" id="password" name="password_confirmation" placeholder="Confirm password" value="{{old('password')}}">
-                        <small>
+                        <input type="password" id="password" name="password_confirmation"
+                            placeholder="Confirm password" value="{{ old('password') }}">
+                        <small style="color: red">
                             @error('password_confirmation')
-                                {{$message}}
+                                {{ $message }}
                             @enderror
                         </small>
                         <span class="eye-icon" onclick="togglePasswordVisibility()">
@@ -87,7 +91,7 @@
             <img id="bgImg" src="{{ asset('asset/img/Frame 1 (1).png') }}" alt="Your Image"
                 style="border-radius: 8px;">
         </div>
-<script src="{{asset('asset/js/script.js')}}"></script>
+        <script src="{{ asset('asset/js/script.js') }}"></script>
     </section>
 </body>
 
