@@ -20,7 +20,8 @@
                 <h1 id="logo">
                     LOGO
                 </h1>
-                <form action="{{asset('register')}}" method="POST">
+                <form action="{{route('registerCommand')}}" method="POST">
+                    @csrf
                     <div id="formHeader">
                         <h3>
                             Create an Account 👋
@@ -30,21 +31,34 @@
                         </p>
                     </div>
                     <label for="fullName">Your Full Name*</label>
-                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" value="{{old('fullName')}}">
+                    <small>
+                        @error('name')
+                            {{$message}}
+                        @enderror
+                    </small>
 
                     <label for="email">Email Address*</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" value="{{old('email')}}">
+                    <small>
+                        @error('email')
+                        
+                        @enderror
+                    </small>
 
                     <label for="password">Create Password*</label>
                     <div class="password-container">
-                        <input type="password" id="password" name="password" placeholder="Create a password">
+                        <input type="password" id="password" name="password" placeholder="Create a password" value="{{old('password')}}">
+                        <small>
+
+                        </small>
                         <span class="eye-icon" onclick="togglePasswordVisibility()">
                             <img src="{{ asset('asset/icons/mdi_eye.png') }}" alt="">
                         </span>
                     </div>
                     <label for="Confirm password">Confirm Password*</label>
                     <div class="password-container">
-                        <input type="password" id="password" name="password_confirmation" placeholder="Confirm password">
+                        <input type="password" id="password" name="password_confirmation" placeholder="Confirm password" value="{{old('password')}}">
                         <span class="eye-icon" onclick="togglePasswordVisibility()">
                             <img src="{{ asset('asset/icons/mdi_eye.png') }}" alt="">
                         </span>
