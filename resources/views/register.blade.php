@@ -46,7 +46,11 @@
 
                     <button type="submit">Register</button>
                 </form>
-                <hr>
+                <div id="hrWrapper">
+                    <hr>
+                    <span>Or</span>
+                    <hr>
+                </div>
                 <button id="google-btn">
                     <img src="{{ asset('asset/icons/flat-color-icons_google.png') }}" alt="Google Logo"
                         id="google-logo">

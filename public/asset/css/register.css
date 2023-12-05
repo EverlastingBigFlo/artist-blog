@@ -74,17 +74,27 @@ button {
     cursor: pointer;
 }
 
-hr {
-    margin: 30px 0; /* Increase margin for hr */
+#hrWrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0; 
+}
+
+#hrWrapper hr {
     border: none;
-    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    width: 40%; 
+}
+
+#hrWrapper span {
+    color: #ccc;
 }
 
 #google-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px; /* Increase padding for button */
+    padding: 12px; 
     background-color: black;
     color: #fff;
     border: none;
@@ -93,14 +103,14 @@ hr {
 }
 
 #google-logo {
-    width: 25px; /* Increase width for the Google logo */
-    height: 25px; /* Increase height for the Google logo */
+    width: 25px; 
+    height: 25px;
     margin-right: 10px;
 }
 
 #bgImg {
     max-width: 100%;
-    max-height: 40rem;
+    max-height: 45rem;
 }
 
 .password-container {
