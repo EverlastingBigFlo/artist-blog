@@ -41,7 +41,7 @@ class IndexCntroller extends Controller
         // to send my request to the database
         User::create($request->all());
 
-        return "Welcome";
+        return redirect()->back()->with('message', 'Account Registered Successfull');
     }
 
     public function login()

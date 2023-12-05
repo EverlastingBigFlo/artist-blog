@@ -21,6 +21,11 @@
                     LOGO
                 </h1>
                 <form action="{{ route('registerCommand') }}" method="POST">
+                        {{-- where to route to when the account is being register to the database --}}
+                    @if (session()->has('message'))
+                        <h1>{{session()->get('message')}}</h1>
+                    @endif
+                    
                     @csrf
                     <div id="formHeader">
                         <h3>
