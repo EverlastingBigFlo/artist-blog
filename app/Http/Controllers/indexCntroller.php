@@ -32,7 +32,7 @@ class IndexCntroller extends Controller
     public function registerCommand(Request $request)
     {
         $request->validate([
-            'name' => 'required',
+            'full_name' => 'required',
             'email' => 'required|email|unique:users',
             'password' => 'required|confirmed|min:6',
             'password_confirmation' => 'required'
