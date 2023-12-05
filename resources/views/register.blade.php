@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 </head>
 
@@ -22,12 +22,12 @@
                 </h1>
                 <form>
                     <div id="formHeader">
-                        <h1>
+                        <h3>
                             Create an Account 👋
-                        </h1>
-                        <h6>
+                        </h3>
+                        <p>
                             Kindly fill in your details to create an account
-                        </h6>
+                        </p>
                     </div>
                     <label for="fullName">Your Full Name*</label>
                     <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
@@ -37,8 +37,7 @@
 
                     <label for="password">Create Password*</label>
                     <div class="password-container">
-                        <input type="password" id="password" name="password" placeholder="Enter your password"
-                            required>
+                        <input type="password" id="password" name="password" placeholder="Create a password" required>
                         <span class="eye-icon" onclick="togglePasswordVisibility()">
                             <img src="{{ asset('asset/icons/mdi_eye.png') }}" alt="">
                         </span>

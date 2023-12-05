@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Cormorant Garamond", serif;
+    font-family: poppins, sans-serif;
 }
 
 section {
@@ -14,12 +14,11 @@ section {
 
 #container {
     display: flex;
-    align-items: center; 
-    gap: 15rem;
+    align-items: center;
+    gap: 12rem;
 }
 
 #form-container {
-
     /* padding: 10rem; */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -28,6 +27,7 @@ section {
 #form-container #logo {
     color: white;
     font-size: 30px;
+    padding-bottom: 5rem;
 }
 
 form {
@@ -36,24 +36,27 @@ form {
     color: #8692a6;
 }
 
-form h1 {
-    font-size: 30px; /* Increase font size for the main heading */
+form h3 {
+    font-size: 20px;
     color: white;
+    font-weight: 500;
+    padding-bottom: .5rem;
 }
 
-form h6 {
-    font-size: 18px; /* Increase font size for the subheading */
+form p {
+    font-size: 12px;
+    padding-bottom: 3rem;
 }
 
 label {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 
     font-size: 10px;
 }
 
 input {
-    padding: 12px; /* Increase padding for input elements */
-    margin-bottom: 20px; /* Increase margin for input elements */
+    padding: 12px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: transparent;
@@ -65,9 +68,12 @@ input:focus {
     border-color: #49676e;
     outline: none;
 }
+input::placeholder {
+    font-size: 10px;
+}
 
 button {
-    padding: 12px; 
+    padding: 12px;
     font-size: 16px;
     background-color: #49676e;
     color: #fff;
@@ -79,13 +85,13 @@ button {
 #hrWrapper {
     display: flex;
     justify-content: space-around;
-    margin: 30px 0; 
+    margin: 30px 0;
 }
 
 #hrWrapper hr {
     border: none;
     border-bottom: 2px solid #ccc;
-    width: 40%; 
+    width: 40%;
 }
 
 #hrWrapper span {
@@ -95,8 +101,8 @@ button {
 #google-btn {
     display: flex;
     align-items: center;
-    gap: .5rem;
-    padding: 12px 5rem; 
+    gap: 0.7rem;
+    padding: 12px 7rem;
     font-size: 16px;
     background-color: black;
     color: #fff;
@@ -106,13 +112,13 @@ button {
 }
 
 #google-logo {
-    width: 25px; 
+    width: 25px;
     height: 25px;
 }
 
 #bgImg {
     max-width: 100%;
-    max-height: 45rem;
+    max-height: 47rem;
 }
 
 .password-container {
@@ -126,7 +132,6 @@ button {
     transform: translateY(-50%);
     cursor: pointer;
 }
-
 
 /* Your existing CSS rules */
 
