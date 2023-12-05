@@ -35,7 +35,7 @@
                             We are happy to have you back
                         </p>
                     </div>
-
+                    {{-- email input --}}
                     <label for="email">Email Address*</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email address"
                         value="{{ old('email') }}">
@@ -44,7 +44,7 @@
                             {{ $message }}
                         @enderror
                     </small>
-
+                    {{-- password input --}}
                     <label for="password">Create Password*</label>
                     <div class="password-container">
                         <input type="password" id="password" name="password" placeholder="Create a password"
@@ -58,7 +58,9 @@
                             <img src="{{ asset('asset/icons/mdi_eye.png') }}" alt="">
                         </span>
                     </div>
-                    <div>
+
+                    {{-- checkbox for remembering password --}}
+                    <div class="remeberPasswordChecker">
                         <input type="checkbox" name="remember_password" id="#rememberPassword">
                         <span>I agree to terms & conditions</span>
                     </div>
