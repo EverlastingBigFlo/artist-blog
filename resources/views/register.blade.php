@@ -30,11 +30,11 @@
                             Kindly fill in your details to create an account
                         </p>
                     </div>
-                    <label for="fullName">Your Full Name*</label>
-                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name"
-                        value="{{ old('fullName') }}">
+                    <label for="name">Your Full Name*</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name"
+                        value="{{ old('name') }}">
                     <small style="color: red">
-                        @error('fullName')
+                        @error('name')
                             {{ $message }}
                         @enderror
                     </small>

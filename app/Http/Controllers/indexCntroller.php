@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class IndexCntroller extends Controller
@@ -31,11 +32,15 @@ class IndexCntroller extends Controller
     public function registerCommand(Request $request)
     {
         $request->validate([
-            'fullName' => 'required',
-            'email' => 'required|email',
+            'name' => 'required',
+            'email' => 'required|email|unique:users',
             'password' => 'required|confirmed|min:6',
             'password_confirmation' => 'required'
         ]);
+
+        // to send my request to the database
+        User::create($request->all());
+
         return "Welcome";
     }
 
