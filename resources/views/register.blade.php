@@ -20,7 +20,7 @@
                 <h1 id="logo">
                     LOGO
                 </h1>
-                <form>
+                <form action="{{asset('register')}}" method="POST">
                     <div id="formHeader">
                         <h3>
                             Create an Account 👋
@@ -30,14 +30,21 @@
                         </p>
                     </div>
                     <label for="fullName">Your Full Name*</label>
-                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
 
                     <label for="email">Email Address*</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address">
 
                     <label for="password">Create Password*</label>
                     <div class="password-container">
-                        <input type="password" id="password" name="password" placeholder="Create a password" required>
+                        <input type="password" id="password" name="password" placeholder="Create a password">
+                        <span class="eye-icon" onclick="togglePasswordVisibility()">
+                            <img src="{{ asset('asset/icons/mdi_eye.png') }}" alt="">
+                        </span>
+                    </div>
+                    <label for="Confirm password">Confirm Password*</label>
+                    <div class="password-container">
+                        <input type="password" id="password" name="password_confirmation" placeholder="Confirm password">
                         <span class="eye-icon" onclick="togglePasswordVisibility()">
                             <img src="{{ asset('asset/icons/mdi_eye.png') }}" alt="">
                         </span>
