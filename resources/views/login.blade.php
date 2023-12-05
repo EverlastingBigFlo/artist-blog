@@ -21,28 +21,20 @@
                     LOGO
                 </h1>
                 <form action="{{ route('registerCommand') }}" method="POST">
-                        {{-- where to route to when the account is being register to the database --}}
+                    {{-- where to route to when the account is being registered to the database --}}
                     @if (session()->has('message'))
-                        <h1>{{session()->get('message')}}</h1>
+                        <h1>{{ session()->get('message') }}</h1>
                     @endif
 
                     @csrf
                     <div id="formHeader">
                         <h3>
-                            Welcome Back  👋
+                            Welcome Back 👋
                         </h3>
                         <p>
                             We are happy to have you back
                         </p>
                     </div>
-                    <label for="name">Your Full Name*</label>
-                    <input type="text" id="name" name="full_name" placeholder="Enter your full name"
-                        value="{{ old('name') }}">
-                    <small style="color: red">
-                        @error('name')
-                            {{ $message }}
-                        @enderror
-                    </small>
 
                     <label for="email">Email Address*</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email address"
@@ -66,18 +58,9 @@
                             <img src="{{ asset('asset/icons/mdi_eye.png') }}" alt="">
                         </span>
                     </div>
-                    <label for="Confirm password">Confirm Password*</label>
-                    <div class="password-container">
-                        <input type="password" id="password" name="password_confirmation"
-                            placeholder="Confirm password" value="{{ old('password') }}">
-                        <small style="color: red">
-                            @error('password_confirmation')
-                                {{ $message }}
-                            @enderror
-                        </small>
-                        <span class="eye-icon" onclick="togglePasswordVisibility()">
-                            <img src="{{ asset('asset/icons/mdi_eye.png') }}" alt="">
-                        </span>
+                    <div>
+                        <input type="checkbox" name="remember_password" id="#rememberPassword">
+                        <span>I agree to terms & conditions</span>
                     </div>
 
                     <button type="submit">Login</button>
