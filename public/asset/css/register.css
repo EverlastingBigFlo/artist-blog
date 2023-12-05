@@ -16,12 +16,12 @@ section {
     display: flex;
     align-items: center;
     gap: 12rem;
+    padding: 1rem;
 }
 
 #form-container {
     /* padding: 10rem; */
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #form-container #logo {
@@ -40,7 +40,7 @@ form h3 {
     font-size: 20px;
     color: white;
     font-weight: 500;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
 }
 
 form p {

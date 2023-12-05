@@ -59,20 +59,7 @@
             <img id="bgImg" src="{{ asset('asset/img/Frame 1 (1).png') }}" alt="Your Image"
                 style="border-radius: 8px;">
         </div>
-
-        <script>
-            function togglePasswordVisibility() {
-                var passwordInput = document.getElementById("password");
-                var eyeIcon = document.querySelector(".eye-icon");
-
-                if (passwordInput.type === "password") {
-                    passwordInput.type = "text";
-
-                } else {
-                    passwordInput.type = "password";
-                }
-            }
-        </script>
+<script src="{{asset('asset/js/script.js')}}"></script>
     </section>
 </body>
 

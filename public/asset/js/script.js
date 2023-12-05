@@ -33,3 +33,16 @@ const searchInput = document.getElementById('searchInput');
 searchIcon.addEventListener('click', function () {
     searchInput.classList.toggle('active');
 });
+
+
+// to toggle visibility on registration page
+function togglePasswordVisibility() {
+    var passwordInput = document.getElementById("password");
+
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+
+    } else {
+        passwordInput.type = "password";
+    }
+}
