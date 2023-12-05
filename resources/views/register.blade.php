@@ -42,7 +42,7 @@
                     <input type="email" id="email" name="email" placeholder="Enter your email address" value="{{old('email')}}">
                     <small>
                         @error('email')
-                        
+                            {{$message}}
                         @enderror
                     </small>
 
@@ -50,7 +50,9 @@
                     <div class="password-container">
                         <input type="password" id="password" name="password" placeholder="Create a password" value="{{old('password')}}">
                         <small>
-
+                            @error('password')
+                                {{$message}}
+                            @enderror
                         </small>
                         <span class="eye-icon" onclick="togglePasswordVisibility()">
                             <img src="{{ asset('asset/icons/mdi_eye.png') }}" alt="">
@@ -59,6 +61,11 @@
                     <label for="Confirm password">Confirm Password*</label>
                     <div class="password-container">
                         <input type="password" id="password" name="password_confirmation" placeholder="Confirm password" value="{{old('password')}}">
+                        <small>
+                            @error('password_confirmation')
+                                {{$message}}
+                            @enderror
+                        </small>
                         <span class="eye-icon" onclick="togglePasswordVisibility()">
                             <img src="{{ asset('asset/icons/mdi_eye.png') }}" alt="">
                         </span>
