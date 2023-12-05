@@ -15,11 +15,12 @@ section {
 #container {
     display: flex;
     align-items: center; 
+    gap: 15rem;
 }
 
 #form-container {
 
-    padding: 40px; /* Increase padding for more space inside the container */
+    /* padding: 10rem; */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -45,8 +46,9 @@ form h6 {
 }
 
 label {
-    margin-bottom: 10px; /* Increase margin for labels */
-    color: #fff;
+    margin-bottom: 10px; 
+
+    font-size: 10px;
 }
 
 input {
@@ -65,8 +67,8 @@ input:focus {
 }
 
 button {
-    padding: 12px; /* Increase padding for button */
-    font-size: 18px; /* Increase font size for button */
+    padding: 12px; 
+    font-size: 16px;
     background-color: #49676e;
     color: #fff;
     border: none;
@@ -93,8 +95,9 @@ button {
 #google-btn {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 12px; 
+    gap: .5rem;
+    padding: 12px 5rem; 
+    font-size: 16px;
     background-color: black;
     color: #fff;
     border: none;
@@ -105,7 +108,6 @@ button {
 #google-logo {
     width: 25px; 
     height: 25px;
-    margin-right: 10px;
 }
 
 #bgImg {

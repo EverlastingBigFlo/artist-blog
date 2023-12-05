@@ -29,13 +29,13 @@
                             Kindly fill in your details to create an account
                         </h6>
                     </div>
-                    <label for="fullName">Full Name</label>
+                    <label for="fullName">Your Full Name*</label>
                     <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
 
-                    <label for="email">Email Address</label>
+                    <label for="email">Email Address*</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email address" required>
 
-                    <label for="password">Create Password</label>
+                    <label for="password">Create Password*</label>
                     <div class="password-container">
                         <input type="password" id="password" name="password" placeholder="Enter your password"
                             required>
