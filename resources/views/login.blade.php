@@ -29,10 +29,10 @@
                     @csrf
                     <div id="formHeader">
                         <h3>
-                            Create an Account 👋
+                            Welcome Back  👋
                         </h3>
                         <p>
-                            Kindly fill in your details to create an account
+                            We are happy to have you back
                         </p>
                     </div>
                     <label for="name">Your Full Name*</label>
@@ -80,7 +80,7 @@
                         </span>
                     </div>
 
-                    <button type="submit">Register</button>
+                    <button type="submit">Login</button>
                 </form>
                 <div id="hrWrapper">
                     <hr>
@@ -90,10 +90,10 @@
                 <button id="google-btn">
                     <img src="{{ asset('asset/icons/flat-color-icons_google.png') }}" alt="Google Logo"
                         id="google-logo">
-                    Register with Google
+                    Login with Google
                 </button>
             </div>
-            <img id="bgImg" src="{{ asset('asset/img/Frame 1 (1).png') }}" alt="Your Image"
+            <img id="bgImg" src="{{ asset('asset/img/loginFrame.png') }}" alt="Your Image"
                 style="border-radius: 8px;">
         </div>
         <script src="{{ asset('asset/js/script.js') }}"></script>
