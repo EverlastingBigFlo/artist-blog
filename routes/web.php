@@ -34,3 +34,5 @@ Route::post('/register', [IndexCntroller::class, 'registerCommand'])->name('regi
 
 
 Route::get('/login', [IndexCntroller::class, 'login'])->name('login');
+
+Route::post('/login', [IndexCntroller::class, 'loginCommand'])->name('loginCommand');

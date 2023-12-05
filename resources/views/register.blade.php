@@ -20,11 +20,11 @@
                 <h1 id="logo">
                     LOGO
                 </h1>
-                <form action="{{ route('registerCommand') }}" method="POST">
+                <form action="{{ route('loginCommand') }}" method="POST">
                         {{-- where to route to when the account is being register to the database --}}
-                    @if (session()->has('message'))
+                    {{-- @if (session()->has('message'))
                         <h1>{{session()->get('message')}}</h1>
-                    @endif
+                    @endif --}}
 
                     @csrf
                     <div id="formHeader">

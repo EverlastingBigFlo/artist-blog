@@ -48,4 +48,14 @@ class IndexCntroller extends Controller
     {
         return view('login');
     }
+
+    public function loginCommand(Request $request)
+    {
+        $request->validate([
+
+            'email' => 'required|email|unique:users',
+            'password' => 'required|confirmed|min:6'
+        ]);
+        return 'welcome';
+    }
 }
