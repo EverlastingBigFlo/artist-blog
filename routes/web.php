@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\IndexCntroller;
+use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,11 +21,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [IndexCntroller::class,'index'])->name('index');
 
+Route::get('/welcome', [IndexCntroller::class, 'welcome'])->name('welcome');
+
 Route::get('/home', [IndexCntroller::class, 'home'])->name('home');
 
-Route::get('/galleries', [IndexCntroller::class, 'galleries'])->name('galleries');
+Route::get('/galleries', [IndexCntroller::class, 'galleries'])->name('galleries')->middleware('auth');
 
-Route::get('/shop', [IndexCntroller::class, 'shop'])->name('shop');
+Route::get('/shop', [IndexCntroller::class, 'shop'])->name('shop')->middleware('auth');
 
 
 // register
