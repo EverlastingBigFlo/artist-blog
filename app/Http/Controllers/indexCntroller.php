@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class IndexCntroller extends Controller
 {
@@ -48,14 +49,27 @@ class IndexCntroller extends Controller
     {
         return view('login');
     }
-
+    public function logout()
+    {
+        auth()->logout();
+    
+        return redirect()->route('login')->with('message', 'You have been logged out successfully.');
+    }
+    
     public function loginCommand(Request $request)
     {
         $request->validate([
 
-            'email' => 'required|email|unique:users',
-            'password' => 'required|confirmed|min:6'
+            'email' => 'required|email',
+            'password' => 'required'
         ]);
-        return 'welcome';
+       $token= auth()->attempt(['email'=>$request->email,'password'=>$request->password]);
+       if ($token) {
+        return redirect()->route('home');
+       }
+       else{
+        return redirect()->back()->with('message','Invalid login');
+       }
     }
 }
+

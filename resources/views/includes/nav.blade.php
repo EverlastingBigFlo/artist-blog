@@ -25,6 +25,7 @@
             <li><a href="{{asset('/shop')}}">Shop</a></li>
         </ul>
     </div>
+   <a href="{{asset('/logout')}}"> <button>Logout</button></a>
     <div class="addToCart"><a href="#"><img src="{{ asset('asset/icons/icons8-favorite-cart-80 1.png') }}"
                 alt="Add To Cart Icon"></a></div>
 </div>

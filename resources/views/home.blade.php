@@ -2,6 +2,9 @@
 
 @section('content')
     <section>
+       @auth
+       <h1>Welcome {{auth()->user()->full_name}}</h1>
+       @endauth
         <div class="heroSection">
             <img src="{{ asset('asset/img/Rectangle 4.png') }}" alt="">
         </div>
