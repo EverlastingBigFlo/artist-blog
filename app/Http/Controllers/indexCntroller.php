@@ -30,6 +30,16 @@ class IndexCntroller extends Controller
         return view('register');
     }
     // to post and connect to database
+
+    // subscribe
+    public function subscribe(Request $request)
+    {
+        $request->validate([
+            
+        ]);
+    }
+
+    // register
     public function registerCommand(Request $request)
     {
         $request->validate([

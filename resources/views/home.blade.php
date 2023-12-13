@@ -43,7 +43,7 @@
 
     {{-- subscribe section --}}
     <section>
-       <form action="{{route('subscribe')}}" method="post">
+       <form action="{{route('subscribe')}}" method="POST">
         <div class="subscribeSec">
             <h1>
                 NEWSLETTER
@@ -55,7 +55,7 @@
             <div class="form">
                 <div class="emailBtn">
                     <input type="email" name="email" placeholder="Email" id="emailInput">
-                    <button>Subscribe</button>
+                    <button type="submit">Subscribe</button>
                 </div>
 
                 <input type="email" name="email" placeholder="Message" id="message">

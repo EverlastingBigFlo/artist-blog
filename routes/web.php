@@ -31,6 +31,9 @@ Route::get('/galleries', [IndexCntroller::class, 'galleries'])->name('galleries'
 Route::get('/shop', [IndexCntroller::class, 'shop'])->name('shop')->middleware('auth');
 
 
+// subscribe
+Route::post('/subscribe', [IndexCntroller::class, 'subscribe'])->name('subscribe');
+
 // register
 // page loading
 Route::get('/register', [IndexCntroller::class, 'register'])->name('register');
