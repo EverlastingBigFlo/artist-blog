@@ -13,7 +13,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('asset/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('asset/css/home_style.css') }}">
-
+    @vite('resources/css/app.css')
 </head>
 
 <body>
