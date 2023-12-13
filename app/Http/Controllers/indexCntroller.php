@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\subscribers;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Redirect;
+
 
 class IndexCntroller extends Controller
 {
@@ -32,13 +33,18 @@ class IndexCntroller extends Controller
     // to post and connect to database
 
     // subscribe
-    public function subscribe(Request $request)
+    public function subscribers(Request $request)
     {
         $request->validate([
             'email' => 'required',
             'message' => 'required'
         ]);
+
+        // Subscribers::create($request->all());
+
+        // return redirect()->back()->with('message', 'Thank you for subscribing');
     }
+
 
     // register
     public function registerCommand(Request $request)

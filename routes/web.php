@@ -32,7 +32,7 @@ Route::get('/shop', [IndexCntroller::class, 'shop'])->name('shop')->middleware('
 
 
 // subscribe
-Route::post('/subscribe', [IndexCntroller::class, 'subscribe'])->name('subscribe');
+Route::post('/subscribers', [IndexCntroller::class, 'subscribers'])->name('subscribers');
 
 // register
 // page loading

@@ -43,7 +43,7 @@
 
     {{-- subscribe section --}}
     <section>
-        <form action="{{ route('subscribe') }}" method="post">
+        <form action="{{ route('subscribers') }}" method="post">
             @csrf
             <div class="subscribeSec">
                 <h1>
