@@ -44,32 +44,33 @@
     {{-- subscribe section --}}
     <section>
         <form action="{{ route('subscribe') }}" method="post">
+            @csrf
             <div class="subscribeSec">
                 <h1>
                     NEWSLETTER
                 </h1>
                 <h4>
-                    A monthly newsletter keeping you up yo date.
+                    A monthly newsletter keeping you up you date.
                 </h4>
 
                 <div class="form">
                     <div class="emailBtn">
                         <input type="email" name="email" placeholder="Email" id="emailInput"
                             value="{{ old('email') }}">
-                        <small>
+                        <span>
                             @error('email')
                                 {{ $message }}
                             @enderror
-                        </small>
+                        </span>
                         <button type="submit">Subscribe</button>
                     </div>
 
                     <input type="text" name="message" placeholder="Message" id="message" value="{{ old('message') }}">
-                    <small>
+                    <span>
                         @error('message')
                             {{ $message }}
                         @enderror
-                    </small>
+                    </span>
                 </div>
             </div>
         </form>
