@@ -45,31 +45,37 @@ class IndexCntroller extends Controller
         return redirect()->back()->with('message', 'Account Registered Successfull');
     }
 
+    // to login 
     public function login()
     {
         return view('login');
     }
-    public function logout()
-    {
-        auth()->logout();
-    
-        return redirect()->route('login')->with('message', 'You have been logged out successfully.');
-    }
-    
+
+
     public function loginCommand(Request $request)
     {
+        // set my rules 
         $request->validate([
 
             'email' => 'required|email',
             'password' => 'required'
         ]);
-       $token= auth()->attempt(['email'=>$request->email,'password'=>$request->password]);
-       if ($token) {
-        return redirect()->route('home');
-       }
-       else{
-        return redirect()->back()->with('message','Invalid login');
-       }
+
+        // get my database information to login
+
+        $token = auth()->attempt(['email' => $request->email, 'password' => $request->password]);
+        if ($token) {
+            return redirect()->route('home');
+        } else {
+            return redirect()->back()->with('message', 'Invalid login');
+        }
+    }
+
+    // to logout from my site
+    public function logout()
+    {
+        auth()->logout();
+
+        return redirect()->route('login')->with('message', 'You have been logged out successfully.');
     }
 }
-
