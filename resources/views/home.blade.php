@@ -2,9 +2,9 @@
 
 @section('content')
     <section>
-       @auth
-       <h1>Welcome {{auth()->user()->full_name}}</h1>
-       @endauth
+        @auth
+            <h1>Welcome {{ auth()->user()->full_name }}</h1>
+        @endauth
         <div class="heroSection">
             <img src="{{ asset('asset/img/Rectangle 4.png') }}" alt="">
         </div>
@@ -18,9 +18,9 @@
 
     <section>
 
-         {{-- write up section --}}
+        {{-- write up section --}}
 
-         <div class="meanSection">
+        <div class="meanSection">
             <h1>
                 MY ART MEANS TO ME
             </h1>
@@ -43,24 +43,35 @@
 
     {{-- subscribe section --}}
     <section>
-       <form action="{{route('subscribe')}}" method="POST">
-        <div class="subscribeSec">
-            <h1>
-                NEWSLETTER
-            </h1>
-            <h4>
-                A monthly newsletter keeping you up yo date.
-            </h4>
+        <form action="{{ route('subscribe') }}" method="post">
+            <div class="subscribeSec">
+                <h1>
+                    NEWSLETTER
+                </h1>
+                <h4>
+                    A monthly newsletter keeping you up yo date.
+                </h4>
 
-            <div class="form">
-                <div class="emailBtn">
-                    <input type="email" name="email" placeholder="Email" id="emailInput">
-                    <button type="submit">Subscribe</button>
+                <div class="form">
+                    <div class="emailBtn">
+                        <input type="email" name="email" placeholder="Email" id="emailInput"
+                            value="{{ old('email') }}">
+                        <small>
+                            @error('email')
+                                {{ $message }}
+                            @enderror
+                        </small>
+                        <button type="submit">Subscribe</button>
+                    </div>
+
+                    <input type="text" name="message" placeholder="Message" id="message" value="{{ old('message') }}">
+                    <small>
+                        @error('message')
+                            {{ $message }}
+                        @enderror
+                    </small>
                 </div>
-
-                <input type="email" name="email" placeholder="Message" id="message">
             </div>
-        </div>
-       </form>
+        </form>
     </section>
 @endsection
