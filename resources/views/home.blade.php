@@ -57,7 +57,7 @@
                     <div class="emailBtn">
                         <input type="email" name="email" placeholder="Email" id="emailInput"
                             value="{{ old('email') }}">
-                        <span>
+                        <span style="color: red">
                             @error('email')
                                 {{ $message }}
                             @enderror
@@ -66,7 +66,7 @@
                     </div>
 
                     <input type="text" name="message" placeholder="Message" id="message" value="{{ old('message') }}">
-                    <span>
+                    <span style="color: red">
                         @error('message')
                             {{ $message }}
                         @enderror
