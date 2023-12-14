@@ -20,22 +20,30 @@
     <div class="cont">
         <ul id="navLinks">
             <li><a href="{{ asset('/home') }}">Home</a></li>
-            <li><a href="{{asset('/galleries')}}">Galleries</a></li>
+            <li><a href="{{ asset('/galleries') }}">Galleries</a></li>
             <li><a href="#">Videos</a></li>
-            <li><a href="{{asset('/shop')}}">Shop</a></li>
+            <li><a href="{{ asset('/shop') }}">Shop</a></li>
         </ul>
     </div>
-   <div>
-    <a href="{{asset('/login')}}"> <button>LOGIN</button></a>
-    <a href="{{asset('/register')}}"> <button>SIGN UP</button></a>
-    <a href="{{asset('/logout')}}"> <button>LOGOUT</button></a>
-   </div>
-    <div class="addToCart"><a href="#"><img src="{{ asset('asset/icons/icons8-favorite-cart-80 1.png') }}"
-                alt="Add To Cart Icon"></a></div>
+
+    @guest
+        <div>
+            <a href="{{ asset('/login') }}"><button>LOGIN</button></a>
+        </div>
+    @endguest
+
+
+
+    <div class="addToCart"><a href="#"><img src="{{ asset('asset/icons/icons8-favorite-cart-80 1.png') }}" alt="Add To Cart Icon"></a></div>
 </div>
 
+@auth
+<!-- Show the welcome message and logout button if the user is authenticated -->
+<div>
+    <h1>Welcome {{ auth()->user()->full_name }}</h1>
+    <a href="{{ asset('/logout') }}"><button>LOGOUT</button></a>
+</div>
+@endauth
 @push('scripts')
-<script src="{{ asset('asset/js/script.js') }}" defer></script>
+    <script src="{{ asset('asset/js/script.js') }}" defer></script>
 @endpush
-
-

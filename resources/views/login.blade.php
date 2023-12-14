@@ -61,8 +61,13 @@
 
                     {{-- checkbox for remembering password --}}
                     <div class="remeberPasswordChecker">
-                        <input type="checkbox" name="remember_password" id="#rememberPassword">
-                        <span>I agree to terms & conditions</span>
+                        <div>
+                            <input type="checkbox" name="remember_password" id="#rememberPassword">
+                        <span>Remeber me</span>
+                        </div>
+                        <a href="#">
+                            Forgot Password ?
+                        </a>
                     </div>
 
                     <button type="submit">Login</button>
@@ -77,6 +82,10 @@
                         id="google-logo">
                     Login with Google
                 </button>
+                <p>
+                    Don’t have an account?
+                    <a href="{{ asset('register') }}">Register</a>
+                </p>
             </div>
             <img id="bgImg" src="{{ asset('asset/img/loginFrame.png') }}" alt="Your Image"
                 style="border-radius: 8px;">
