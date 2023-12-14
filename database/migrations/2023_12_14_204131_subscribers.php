@@ -11,17 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        {
-            Schema::create('subscribers', function (Blueprint $table) {
-                $table->id();
-                $table->string('email')->unique();
-                $table->text('message');
-                $table->timestamp('email_verified_at')->nullable();
-                $table->timestamps(); 
-
-            });
-        }
-    
+        Schema::create('subscribers', function (Blueprint $table) {
+            $table->id();
+            $table->string('email');
+            $table->string('message');
+            $table->rememberToken();
+            $table->timestamps();
+        });
     }
 
     /**
@@ -29,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('subscribers');
     }
 };

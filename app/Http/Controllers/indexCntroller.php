@@ -40,7 +40,7 @@ class IndexCntroller extends Controller
             'message' => 'required'
         ]);
 
-        // Subscribers::create($request->all());
+        Subscribers::create($request->all());
 
         // return redirect()->back()->with('message', 'Thank you for subscribing');
     }

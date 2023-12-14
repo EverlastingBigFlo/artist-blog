@@ -20,9 +20,9 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-// Route::get('/', [IndexCntroller::class,'index'])->name('index');
+Route::get('/', [IndexCntroller::class,'welcome'])->name('welcome');
 
-Route::get('/welcome', [IndexCntroller::class, 'welcome'])->name('welcome');
+// Route::get('/welcome', [IndexCntroller::class, 'welcome'])->name('welcome');
 
 Route::get('/home', [IndexCntroller::class, 'home'])->name('home');
 
