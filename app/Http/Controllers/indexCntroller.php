@@ -42,7 +42,7 @@ class IndexCntroller extends Controller
 
         Subscribers::create($request->all());
 
-        // return redirect()->back()->with('message', 'Thank you for subscribing');
+        return redirect()->back()->with('message', 'Thank you for subscribing');
     }
 
 

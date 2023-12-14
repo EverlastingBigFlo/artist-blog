@@ -18,9 +18,8 @@ class Subscribers extends Model
      */
 
     protected $fillable = [
-        'full_name',
         'email',
-        'password',
+        'message',
     ];
 
 
@@ -39,7 +38,6 @@ class Subscribers extends Model
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
-        'password' => 'hashed',
     ];
 
 
