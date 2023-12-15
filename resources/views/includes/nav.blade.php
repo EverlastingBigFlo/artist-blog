@@ -19,16 +19,18 @@
         </ul>
     </div>
 
-    @guest
-        <div>
-            <a href="{{ asset('/login') }}"><button>LOGIN</button></a>
-        </div>
-    @endguest
 
 
 
     <div class="addToCart"><a href="#"><img src="{{ asset('asset/icons/icons8-favorite-cart-80 1.png') }}"
-                alt="Add To Cart Icon"></a></div>
+                alt="Add To Cart Icon"></a>
+                @guest
+                <div>
+                    <a href="{{ asset('/login') }}">Login</a>
+                </div>
+            @endguest
+            </div>
+                
 
     @auth
         <!-- Show the welcome message and logout button if the user is authenticated -->

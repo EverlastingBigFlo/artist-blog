@@ -25,8 +25,7 @@
         width: 20rem;
         opacity: 1;
         overflow: hidden;
-        transition: transla max-height 5s ease, opacity 1s ease;
-
+        transition: max-height 5s ease, opacity 1s ease;
     }
 
     .heroWrapper .heroCont .subHeader input[type="search"].active {
@@ -37,6 +36,7 @@
     }
 </style>
 
+
 @extends('layouts/layout')
 
 @section('content')
@@ -45,8 +45,8 @@
             <div class="subHeader">
                 <p>Shop</p>
                 <div style="display: flex;">
-                    <p id="searchIcon">🔍</p>
                     <input type="search" id="searchInput" placeholder="Search" class="active">
+                    <p id="searchIcon">🔍</p>
                 </div>
             </div>
         </div>

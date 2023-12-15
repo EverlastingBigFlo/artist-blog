@@ -28,7 +28,8 @@ Route::get('/home', [IndexCntroller::class, 'home'])->name('home');
 
 Route::get('/galleries', [IndexCntroller::class, 'galleries'])->name('galleries')->middleware('auth');
 
-Route::get('/shop', [IndexCntroller::class, 'shop'])->name('shop')->middleware('auth');
+Route::get('/shop', [IndexCntroller::class, 'shop'])->name('shop');
+// ->middleware('auth');
 
 
 // subscribe
