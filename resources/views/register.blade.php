@@ -17,9 +17,11 @@
     <section>
         <div id="container">
             <div id="form-container">
+             <a href="{{asset('welcome')}}">
                 <h1 id="logo">
                     LOGO
                 </h1>
+            </a>
                 <form action="{{ route('registerCommand') }}" method="POST">
                         {{-- where to route to when the account is being register to the database --}}
                     @if (session()->has('message'))
@@ -79,7 +81,6 @@
                             <img src="{{ asset('asset/icons/mdi_eye.png') }}" alt="">
                         </span>
                     </div>
-
                     <button type="submit">Register</button>
                 </form>
                 <div id="hrWrapper">
@@ -94,7 +95,7 @@
                 </button>
                 <p class="toReg">
                     Already  have an account?
-                    <a href="{{ asset('register') }}">Login Heregit</a>
+                    <a href="{{ asset('register') }}">Login Here</a>
                 </p>
             </div>
             <img id="bgImg" src="{{ asset('asset/img/Frame 1 (1).png') }}" alt="Your Image"

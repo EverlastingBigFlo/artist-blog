@@ -140,6 +140,11 @@ button {
     text-decoration: none;
     color: #fff ; 
 }
+.passFor{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
 
 /* Media query for screens smaller than 576px (typical small smartphones) */
 @media only screen and (max-width: 575.98px) {

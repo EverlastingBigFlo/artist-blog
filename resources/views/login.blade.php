@@ -17,9 +17,11 @@
     <section>
         <div id="container">
             <div id="form-container">
-                <h1 id="logo">
-                    LOGO
-                </h1>
+                <a href="{{asset('/')}}">
+                    <h1 id="logo">
+                        LOGO
+                    </h1>
+                </a>
                 <form action="{{ route('loginCommand') }}" method="POST">
                     {{-- where to route to when the account is being registered to the database --}}
                     @if (session()->has('message'))
@@ -65,7 +67,7 @@
                             <input type="checkbox" name="remember_password" id="#rememberPassword">
                         <span>Remeber me</span>
                         </div>
-                        <a href="#">
+                        <a href="#" class="passFor">
                             Forgot Password ?
                         </a>
                     </div>
