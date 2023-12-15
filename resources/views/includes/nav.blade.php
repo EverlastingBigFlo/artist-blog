@@ -35,15 +35,17 @@
 
 
     <div class="addToCart"><a href="#"><img src="{{ asset('asset/icons/icons8-favorite-cart-80 1.png') }}" alt="Add To Cart Icon"></a></div>
-</div>
 
-@auth
+    @auth
 <!-- Show the welcome message and logout button if the user is authenticated -->
 <div>
-    <h1>Welcome {{ auth()->user()->full_name }}</h1>
+    <h4> {{ auth()->user()->full_name }}</h4>
     <a href="{{ asset('/logout') }}"><button>LOGOUT</button></a>
 </div>
 @endauth
+</div>
+
+
 @push('scripts')
     <script src="{{ asset('asset/js/script.js') }}" defer></script>
 @endpush
