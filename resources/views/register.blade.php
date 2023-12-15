@@ -17,15 +17,15 @@
     <section>
         <div id="container">
             <div id="form-container">
-             <a href="{{asset('welcome')}}">
-                <h1 id="logo">
-                    LOGO
-                </h1>
-            </a>
+                <a href="{{ asset('welcome') }}">
+                    <h1 id="logo">
+                        LOGO
+                    </h1>
+                </a>
                 <form action="{{ route('registerCommand') }}" method="POST">
-                        {{-- where to route to when the account is being register to the database --}}
+                    {{-- where to route to when the account is being register to the database --}}
                     @if (session()->has('message'))
-                        <h1>{{session()->get('message')}}</h1>
+                        <h1>{{ session()->get('message') }}</h1>
                     @endif
 
                     @csrf
@@ -94,7 +94,7 @@
                     Register with Google
                 </button>
                 <p class="toReg">
-                    Already  have an account?
+                    Already have an account?
                     <a href="{{ asset('register') }}">Login Here</a>
                 </p>
             </div>

@@ -23,6 +23,9 @@ section {
     /* padding: 10rem; */
     border-radius: 8px;
 }
+#form-container a {
+    text-decoration: none;
+}
 
 #form-container #logo {
     color: white;
@@ -132,15 +135,15 @@ button {
     cursor: pointer;
 }
 
-.toReg{
-    color: #8692a6 ; 
-    padding-top: .5rem;
+.toReg {
+    color: #8692a6;
+    padding-top: 0.5rem;
 }
-.toReg a{
+.toReg a {
     text-decoration: none;
-    color: #fff ; 
+    color: #fff;
 }
-.passFor{
+.passFor {
     text-decoration: none;
     color: #fff;
     font-size: 13px;

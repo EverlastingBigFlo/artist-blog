@@ -17,7 +17,7 @@
     <section>
         <div id="container">
             <div id="form-container">
-                <a href="{{asset('/')}}">
+                <a href="{{ asset('/') }}">
                     <h1 id="logo">
                         LOGO
                     </h1>
@@ -65,7 +65,7 @@
                     <div class="remeberPasswordChecker">
                         <div>
                             <input type="checkbox" name="remember_password" id="#rememberPassword">
-                        <span>Remeber me</span>
+                            <span>Remeber me</span>
                         </div>
                         <a href="#" class="passFor">
                             Forgot Password ?

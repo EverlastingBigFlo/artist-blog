@@ -1,14 +1,13 @@
-*{
-    font-family: 'Cormorant Garamond', serif;
+* {
+    font-family: "Cormorant Garamond", serif;
     padding: 0;
     margin: 0;
-
 }
 
 /* nav styling */
 
 .navBg {
-    background-color: #C0C6B9;
+    background-color: #c0c6b9;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -18,7 +17,7 @@
 .navBg .logo a {
     text-decoration: none;
     font-size: 50px;
-    color: #49676E;
+    color: #49676e;
 }
 
 .navBg .logo a:hover {
@@ -37,7 +36,7 @@
 
 .navBg .cont a {
     text-decoration: none;
-    color: #49676E;
+    color: #49676e;
     font-size: 25px;
 }
 
@@ -46,11 +45,11 @@
 }
 
 .navBg .cont a::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #49676E;
+    background-color: #49676e;
     bottom: 0;
     left: 0;
     transform: scaleX(0);
@@ -59,11 +58,8 @@
 
 .navBg .cont li:hover a::after,
 .navBg .cont li.active a::after {
-    transform: scaleX(1); 
+    transform: scaleX(1);
 }
-
-
-
 
 /* sideBar styling */
 .SideNav {
@@ -71,7 +67,7 @@
     padding: 20px;
     position: absolute;
     right: 0;
-    transform: rotate(90deg); 
+    transform: rotate(90deg);
     transform-origin: top right;
     top: 17rem;
     display: flex;
@@ -79,7 +75,6 @@
     font-size: 25px;
     padding: 5rem;
 }
-
 
 .sideCont ul {
     list-style: none;
@@ -93,25 +88,21 @@
     margin-bottom: 10px;
 }
 
-
 /* Optional: Style links */
 .SideNav a {
-    color: #49676E;
+    color: #49676e;
     text-decoration: none;
 }
 
 .SideNav a:hover {
-    color: black; 
+    color: black;
 }
-
-
-
 
 /* footer styling */
 
-.footerBg{
+.footerBg {
     max-height: 100%;
-    background-color: #C0C6B9;
+    background-color: #c0c6b9;
     padding: 20px 0;
     display: flex;
     flex-direction: column;
@@ -119,28 +110,26 @@
     margin-top: 10rem;
 }
 
-.footerBg .footerCont{
+.footerBg .footerCont {
     padding-top: 15px;
 }
 
-.footerBg .footerCont ul{
+.footerBg .footerCont ul {
     display: flex;
     list-style: none;
     justify-content: center;
     gap: 100px;
     font-size: 20px;
-    color: #49676E;
+    color: #49676e;
 }
 
-.footerBg .footerCont ul a{
+.footerBg .footerCont ul a {
     text-decoration: none;
-    color: #49676E;
+    color: #49676e;
 }
-
-
 
 /* contact section */
-.footerBg .footerContact{
+.footerBg .footerContact {
     max-height: 100%;
     display: flex;
     justify-content: center;
@@ -148,25 +137,22 @@
     padding: 20px;
 }
 
-.footerBg .footerContact ul{
+.footerBg .footerContact ul {
     display: flex;
     list-style: none;
     gap: 50px;
-    color: #49676E;
+    color: #49676e;
 }
 
-.footerBg .footerContact ul a img{
+.footerBg .footerContact ul a img {
     width: 20px;
 }
 
 /* copyright styling */
-.footerBg .copyright{
-    color: #49676E;
+.footerBg .copyright {
+    color: #49676e;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
 }
-
-
-

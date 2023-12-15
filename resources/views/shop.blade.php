@@ -33,7 +33,7 @@
         max-height: 0;
         opacity: 0;
         overflow: hidden;
-        width: 20rem; 
+        width: 20rem;
     }
 </style>
 
