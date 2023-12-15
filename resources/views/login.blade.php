@@ -82,7 +82,7 @@
                         id="google-logo">
                     Login with Google
                 </button>
-                <p>
+                <p class="toReg">
                     Don’t have an account?
                     <a href="{{ asset('register') }}">Register</a>
                 </p>

@@ -50,7 +50,6 @@ form p {
 
 label {
     margin-bottom: 10px;
-
     font-size: 10px;
 }
 
@@ -133,7 +132,14 @@ button {
     cursor: pointer;
 }
 
-/* Your existing CSS rules */
+.toReg{
+    color: #8692a6 ; 
+    padding-top: .5rem;
+}
+.toReg a{
+    text-decoration: none;
+    color: #fff ; 
+}
 
 /* Media query for screens smaller than 576px (typical small smartphones) */
 @media only screen and (max-width: 575.98px) {

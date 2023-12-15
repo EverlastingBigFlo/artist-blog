@@ -92,6 +92,10 @@
                         id="google-logo">
                     Register with Google
                 </button>
+                <p class="toReg">
+                    Already  have an account?
+                    <a href="{{ asset('register') }}">Login Heregit</a>
+                </p>
             </div>
             <img id="bgImg" src="{{ asset('asset/img/Frame 1 (1).png') }}" alt="Your Image"
                 style="border-radius: 8px;">
