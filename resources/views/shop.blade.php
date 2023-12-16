@@ -49,8 +49,24 @@
                     <p id="searchIcon">🔍</p>
                 </div>
             </div>
+        
+            <div>
+                <div class="flex justify-between">
+                    <div>
+                        <img src="{{asset('asset/img/Rectangle 32.png')}}" alt="">
+                    </div>
+                    <div>
+                        <img src="{{asset('asset/img/Rectangle 33.png')}}" alt="">
+                    </div>
+                    <div>
+                        <img src="{{asset('asset/img/Rectangle 34.png')}}" alt="">
+                    </div>
+                </div>
+                <div></div>
+            </div>
         </div>
     </div>
+
 
     @push('scripts')
         <script src="{{ asset('/js/script.js') }}"></script>
