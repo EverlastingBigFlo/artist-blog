@@ -6,44 +6,9 @@
 
 /* nav styling */
 
-/* .navBg {
-    background-color: #c0c6b9;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 101px;
-}
-
-.navBg .logo a {
-    text-decoration: none;
-    font-size: 50px;
-    color: #49676e;
-}
-
-.navBg .logo a:hover {
-    color: black;
-} */
-/* 
-.navBg .cont ul {
-    display: flex;
-    gap: 45px;
-    list-style: none;
-} */
-
 .navBg .cont li {
     position: relative;
 }
-
-/* .navBg .cont a {
-    text-decoration: none;
-    color: #49676e;
-    font-size: 25px;
-} */
-
-/* .navBg .cont a:hover {
-    color: black;
-} */
-
 .navBg .cont a::after {
     content: "";
     position: absolute;
@@ -59,43 +24,6 @@
 .navBg .cont li:hover a::after,
 .navBg .cont li.active a::after {
     transform: scaleX(1);
-}
-
-/* sideBar styling */
-.SideNav {
-    width: 30px;
-    padding: 20px;
-    position: absolute;
-    right: 0;
-    transform: rotate(90deg);
-    transform-origin: top right;
-    top: 17rem;
-    display: flex;
-    gap: 25rem;
-    font-size: 25px;
-    padding: 5rem;
-}
-
-.sideCont ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 5rem;
-}
-
-.sideCont ul li {
-    margin-bottom: 10px;
-}
-
-/* Optional: Style links */
-.SideNav a {
-    color: #49676e;
-    text-decoration: none;
-}
-
-.SideNav a:hover {
-    color: black;
 }
 
 /* footer styling */

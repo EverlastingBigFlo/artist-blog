@@ -23,11 +23,11 @@
 
 
 
-    <div class="addToCart flex gap-5"><a href="#"><img src="{{ asset('asset/icons/icons8-favorite-cart-80 1.png') }}"
+    <div class="addToCart flex gap-5"><a href="#"><img class="text-[#49676E]" src="{{ asset('asset/icons/icons8-favorite-cart-80 1.png') }}"
                 alt="Add To Cart Icon"></a>
                 @guest
                 <div>
-                    <a href="{{ asset('/login') }}" class="text-[49676E]">Login</a>
+                    <a href="{{ asset('/login') }}" class="text-[#49676E]">Login</a>
                 </div>
             @endguest
             </div>
