@@ -1,11 +1,4 @@
 <style>
-    .heroWrapper .heroCont .subHeader input[type="search"] {
-        width: 20rem;
-        opacity: 1;
-        overflow: hidden;
-        transition: max-height 5s ease, opacity 1s ease;
-    }
-
     .heroWrapper .heroCont .subHeader input[type="search"].active {
         max-height: 0;
         opacity: 0;
@@ -22,8 +15,9 @@
         <div class="heroCont max-w-[80%] m-auto ">
             <div class="subHeader h-40 flex justify-around items-center">
                 <p class="text-[49676E] text-[40px]">Shop</p>
-                <div style="display: flex;">
-                    <input type="search" id="searchInput" placeholder="Search" class="active">
+                <div class="flex">
+                    <input type="search" id="searchInput" placeholder="Search"
+                        class="active w-80 h-[35px] rounded-lg border border-gray-300 opacity-100 overflow-hidden transition-max-height-5000 ease-linear">
                     <p id="searchIcon">🔍</p>
                 </div>
             </div>

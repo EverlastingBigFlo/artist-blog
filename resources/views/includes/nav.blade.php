@@ -8,10 +8,10 @@
 
 
 
-<div class="navBg">
-    <div class="logo"><a href="#">LOGO</a></div>
+<div class="navBg bg-[c0c6b9] flex justify-around items-center h-[101px]">
+    <div class="logo"><a href="{{asset('/home')}}" class=" text-5xl text-[49676e] hover:text-black">LOGO</a></div>
     <div class="cont">
-        <ul id="navLinks">
+        <ul id="navLinks" class="flex gap-[45px]">
             <li><a href="{{ asset('/home') }}">Home</a></li>
             <li><a href="{{ asset('/galleries') }}">Galleries</a></li>
             <li><a href="#">Videos</a></li>
@@ -22,11 +22,11 @@
 
 
 
-    <div class="addToCart"><a href="#"><img src="{{ asset('asset/icons/icons8-favorite-cart-80 1.png') }}"
+    <div class="addToCart flex gap-5"><a href="#"><img src="{{ asset('asset/icons/icons8-favorite-cart-80 1.png') }}"
                 alt="Add To Cart Icon"></a>
                 @guest
                 <div>
-                    <a href="{{ asset('/login') }}">Login</a>
+                    <a href="{{ asset('/login') }}" class="text-[49676E]">Login</a>
                 </div>
             @endguest
             </div>
