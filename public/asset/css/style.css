@@ -34,15 +34,15 @@
     position: relative;
 }
 
-.navBg .cont a {
+/* .navBg .cont a {
     text-decoration: none;
     color: #49676e;
     font-size: 25px;
-}
+} */
 
-.navBg .cont a:hover {
+/* .navBg .cont a:hover {
     color: black;
-}
+} */
 
 .navBg .cont a::after {
     content: "";
