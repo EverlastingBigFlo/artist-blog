@@ -75,35 +75,35 @@
     color: #49676E;
     padding: 10rem 0 2rem 0;
 } */
-
+/* 
 .subscribeSec h4{
     font-size: 18px;
     font-weight: lighter;
     color: #49676E;
     padding-bottom: 2rem;
-}
+} */
 
-.subscribeSec .form .emailBtn #emailInput{
+/* .subscribeSec .form .emailBtn #emailInput{
 border: none;
 background-color: #EAE7DC;
-border-radius: 10px;
+border-radius: 10px; 
 padding: 20px;
 width: 260px;
-}
-.subscribeSec .form .emailBtn #emailInput::placeholder {
+} */
+/* .subscribeSec .form .emailBtn #emailInput::placeholder {
     color: #49676E; 
     font-size: 18px; 
-}
-.subscribeSec .form .emailBtn button{
+} */
+/* .subscribeSec .form .emailBtn button{
     padding: 20px 30px;
     border-radius: 10px;
     border: none;
     background-color: #EAE7DC;
     font-size: 14px;
     color: #49676E;
-}
+} */
 
-.subscribeSec .form #message{
+/* .subscribeSec .form #message{
     border: none;
     background-color: #EAE7DC;
     border-radius: 10px;
@@ -111,9 +111,9 @@ width: 260px;
     width: 397px;
     height: 98px;
     margin-top: 30px;
-    }
-.subscribeSec .form #message::placeholder{
+    } */
+/* .subscribeSec .form #message::placeholder{
    color: #49676E;
    font-size: 18px;
    transform: translateY(-30px);
-    }
+    } */

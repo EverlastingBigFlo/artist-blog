@@ -52,23 +52,26 @@
                 <h1 class="text-[35px] font-extralight text-center text-[#49676E] pt-[10rem] pb-[2rem]">
                     NEWSLETTER
                 </h1>
-                <h4>
+                <h4 class="text-[18px] font-extralight text-[#49676E] pb-[2rem]">
                     A monthly newsletter keeping you up you date.
                 </h4>
 
-                <div class="form">
-                    <div class="emailBtn">
-                        <input type="email" name="email" placeholder="Email" id="emailInput"
-                            value="{{ old('email') }}">
+                <div>
+                    <div>
+                        <input type="email" name="email" placeholder="Email" id="emailInput" value="{{ old('email') }}"
+                            class=" border-none bg-[#EAE7DC] rounded-xl p-[20px] w-[285px] placeholder:text-[#49676E] text-lg">
                         <span style="color: red">
                             @error('email')
                                 {{ $message }}
                             @enderror
                         </span>
-                        <button type="submit">Subscribe</button>
+                        <button type="submit"
+                            class="px-5 py-5 rounded-xl border-none bg-[#EAE7DC] text-lg text-[#49676E]">Subscribe</button>
                     </div>
 
-                    <input type="text" name="message" placeholder="Message" id="message" value="{{ old('message') }}">
+                    {{-- <input type="text" name="message" placeholder="Message" id="message" value="{{ old('message') }}" class="border-none bg-[#EAE7DC] rounded-xl p-[10px] w-[397px] h-[98px] mt-[30px] placeholder:text-[#49676E] text-lg"> --}}
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" value="{{ old('message') }}"
+                        class="border-none bg-[#EAE7DC] rounded-xl p-[10px] w-[397px] h-[98px] mt-[30px] placeholder:text-[#49676E] text-lg"></textarea>
                     <span style="color: red">
                         @error('message')
                             {{ $message }}
