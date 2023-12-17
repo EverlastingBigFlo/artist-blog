@@ -14,7 +14,7 @@
     <div class="heroWrapper min-h-full max-w-[100vw] ">
         <div class="heroCont max-w-[80%] m-auto ">
             <div class="subHeader h-40 flex justify-around items-center">
-                <p class="text-[49676E] text-[40px]">Shop</p>
+                <p class="text-[#49676E] text-[40px]">Shop</p>
                 <div class="flex">
                     <input type="search" id="searchInput" placeholder="Search"
                         class="active w-80 h-[35px] rounded-lg border border-gray-300 opacity-100 overflow-hidden transition-max-height-5000 ease-linear">

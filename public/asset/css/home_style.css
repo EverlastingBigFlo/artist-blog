@@ -1,18 +1,18 @@
 
 /* first image styling */
-.heroSection {
-    width: 72.875rem;
-    height: 39rem;
+/* .heroSection { */
+    /* width: 72.875rem; */
+    /* height: 39rem; */
+    /* margin: auto; */
+    /* display: flex; */
+    /* justify-content: center; */
+/* } */
+/* .heroSection img {
     margin: auto;
-    display: flex;
-    justify-content: center;
-}
-.heroSection img {
-    margin: auto;
-}
+} */
 
 /* second image styling */
-.anotherSection {
+/* .anotherSection {
     width: 72.875rem;
     height: 32.5rem;
     display: flex;
@@ -20,17 +20,17 @@
     justify-content: center;
     gap: 3rem;
     margin: auto;
-}
+} */
 
-.anotherSection img {
+/* .anotherSection img {
     max-width: 100%;
     max-height: 100%;
-}
+} */
 
 
 /* write up section styling */
 
-.meanSection{
+/* .meanSection{
     max-width: 72.875rem;
     max-height: 327px;
     display: flex;
@@ -38,27 +38,27 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-}
+} */
 
-.meanSection h1{
+/* .meanSection h1{
     font-size: 35px;
     font-weight: lighter;
     text-align: center;
     color: #49676E;
     padding-bottom: 2rem;
-}
-.meanSection p{
+} */
+/* .meanSection p{
     max-width: 1043px;
     font-size: 20px;
     text-align: center;
     color: #49676eb1;
     padding-top: 3rem;
-}
+} */
 
 
 /* subscribe styling */
 
-.subscribeSec{
+/* .subscribeSec{
     width: 72.875rem;
     height: 348px;
     display: flex;
@@ -66,15 +66,15 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-}
+} */
 
-.subscribeSec h1{
+/* .subscribeSec h1{
     font-size: 35px;
     font-weight: lighter;
     text-align: center;
     color: #49676E;
     padding: 10rem 0 2rem 0;
-}
+} */
 
 .subscribeSec h4{
     font-size: 18px;
