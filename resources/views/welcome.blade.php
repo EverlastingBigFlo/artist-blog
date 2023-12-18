@@ -91,11 +91,12 @@
 </head>
 
 <body>
-    <div class="welcomePage">
+    {{-- max-w-prose max-h-full sm:max-w-full sm:max-h-screen --}}
+    <div class="welcomePage  ">
         {{-- nav --}}
         <header>
             <div class="navBg">
-                <div class="logo"><a href="#">LOGO</a></div>
+                <div class="logo hover:text-bla1"><a href="{{asset('/')}}">LOGO</a></div>
             </div>
         </header>
 
@@ -104,7 +105,7 @@
         <section>
             <div class="heroSection">
                 <div class="largeImage">
-                    <img src="{{ asset('asset/img/Ellipse 1.png') }}" alt="largeImage">
+                    <img class="h-48 w-full object-cover md:h-full md:w-48" src="{{ asset('asset/img/Ellipse 1.png') }}" alt="largeImage">
                 </div>
                 <div class="smallImage">
                     <img src="{{ asset('asset/img/Ellipse 3.png') }}" alt="smallImage">

@@ -17,7 +17,7 @@
     <section>
         <div id="container">
             <div id="form-container">
-                <a href="{{ asset('welcome') }}">
+                <a href="{{ asset('/') }}">
                     <h1 id="logo">
                         LOGO
                     </h1>
