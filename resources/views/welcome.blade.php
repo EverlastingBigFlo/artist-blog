@@ -88,42 +88,41 @@
 
         }
     </style> --}}
-@vite('resources/css/app.css')
+    @vite('resources/css/app.css')
 </head>
 
 <body>
     {{-- max-w-prose max-h-full sm:max-w-full sm:max-h-screen --}}
-    <div class="welcomePage flex m-auto border-[2.5rem] border-black sm:h-screen md:h-screen lg:h-screen xl:h-screen 2xl:h-screen sm:w-screen md:w-screen lg:w-screen xl:w-screen 2xl:w-screen">
+    <div
+        class="welcomePage flex m-auto border-[2.5rem] border-black sm:h-screen md:h-screen lg:h-screen xl:h-screen 2xl:h-screen sm:w-screen md:w-screen lg:w-screen xl:w-screen 2xl:w-screen">
         {{-- nav --}}
         <header>
             <div class="navBg sm:max-h-full md:max-h-full lg:max-h-full xl:max-h-full 2xl:max-h-full mt-16">
-                <div class="logo hover:text-bla1"><a class=" text-5xl text-[#49676E] hover:text-black" href="{{asset('/')}}">LOGO</a></div>
-                text-decoration: none;
-                font-size: 50px;
-                color: #49676E;
-                padding-left: 5rem;
-                padding-top: 5rem;
-                transform: translateY(5rem);
+                <div class="logo hover:text-bla1"><a
+                        class=" text-5xl text-[#49676E] hover:text-black pl-20 pt-20 transform translate-y-20"
+                        href="{{ asset('/') }}">LOGO</a></div>
             </div>
         </header>
 
         {{-- heroSection --}}
 
         <section>
-            <div class="heroSection">
+            <div class="heroSection relative max-w-full max-h-full">
                 <div class="largeImage">
                     <img class=""src="{{ asset('asset/img/Ellipse 1.png') }}" alt="largeImage">
                 </div>
                 <div class="smallImage">
                     <img src="{{ asset('asset/img/Ellipse 3.png') }}" alt="smallImage">
                 </div>
-                <div class="mediumImage">
+                <div class="mediumImage ">
                     <img src="{{ asset('asset/img/Ellipse 2.png') }}" alt="mediumImage">
 
                 </div>
 
-                <div class="welcomeBtn">
-                    <a href="{{ asset('/home') }}">
+                <div class="welcomeBtn absolute left-[37rem] top-[15rem]">
+
+                    <a class=" bg-[#EAE7DC] border-4 text-[#49676ebb] text-[25px] border-[#49676E] rounded-lg pt-[1.4rem] pb-[1.4rem] pl-[3rem] pr-[3rem] shadow-lg"
+                        href="{{ asset('/home') }}">
                         <button>WELCOME</button></a>
                 </div>
             </div>
