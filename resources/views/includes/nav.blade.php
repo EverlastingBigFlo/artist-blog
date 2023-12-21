@@ -8,7 +8,7 @@
 
 
 
-<div class="navBg bg-[#c0c6b9] flex justify-around items-center h-[101px]">
+<div class="navBg bg-[#c0c6b9] flex justify-around items-center h-[101px] w-screen">
     <div class="logo"><a href="{{asset('/')}}" class=" text-5xl text-[#49676e] hover:text-black">LOGO</a></div>
     <div class="cont">
         <ul id="navLinks" class="flex gap-[45px]">
