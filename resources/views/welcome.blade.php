@@ -93,45 +93,43 @@
 
 <body>
     <div
-        class="welcomePage border-[2.5rem] border-black sm:h-screen 
+        class="welcomePage md:border-[1.5rem] lg:border-[2.5rem] border-black sm:h-screen 
         md:h-screen lg:h-screen xl:h-screen 2xl:h-screen  sm:w-screen 
-        md:w-screen lg:w-screen xl:w-screen 2xl:w-screen overflow-hidden">
+        md:w-screen lg:w-screen xl:w-screen 2xl:w-screen overflow-hidden
+        relative">
         {{-- nav --}}
         <header>
             <div class="navBg sm:max-h-full md:max-h-full lg:max-h-full xl:max-h-full 2xl:max-h-full mt-16">
-                <div class="logo hover:text-black"><a
-                        class=" text-5xl text-[#49676E] hover:text-black pl-20 pt-20 transform translate-y-20"
+                <div><a
+                        class=" text-5xl sm:text-[#49676E] text-red-50 hover:text-black pl-20 pt-20 transform translate-y-20"
                         href="{{ asset('/') }}">LOGO</a></div>
             </div>
         </header>
 
-        {{-- heroSection --}}
-
-        <section class="overflow-hidden relative flex m-auto ">
-            <div class="heroSection max-w-[80%] max-h-[80%]">
-                <div class="largeBtn flex items-center gap-[5rem] absolute object-cover">
+        <!-- heroSection -->
+        <section class="overflow-hidden flex items-center justify-center">
+            <div class="heroSection max-w-[80%] max-h-[80%] ">
+                <div class="largeBtn flex items-center gap-40  object-cover">
                     <div class="largeImage">
                         <img src="{{ asset('asset/img/Ellipse 1.png') }}" alt="largeImage">
                     </div>
                     <div class="welcomeBtn">
-
-                        <a class="bg-[#EAE7DC] border-4 text-[#49676ebb] text-[25px] border-[#49676E] 
-                                    rounded-lg py-[1.4rem] px-[3rem] shadow-[0_5px_5px_rgba(0,0,0,0.5)]"
+                        <a class="
+                        bg-[#EAE7DC] border-4 text-[#49676ebb] text-[25px] border-[#49676E] 
+                            rounded-lg py-[1.4rem] px-[3rem] shadow-[0_5px_5px_rgba(0,0,0,0.5)]"
                             href="{{ asset('/home') }}">
-                            <button>WELCOME</button></a>
+                            <button>WELCOME</button>
+                        </a>
                     </div>
                 </div>
-                <div class="smallMed top-10 object-cover">
+                <div class="smallMed object-cover absolute top-[2rem] mx-[24rem] flex flex-col gap-52">
                     <div class="smallImage">
-                        <img src="{{ asset('asset/img/Ellipse 3.png') }}" alt="smallImage">
+                        <img src="{{ asset('asset/img/Ellipse 3.png') }}" alt="smallImage" class=" sm:w-lg md:object-cover ">
                     </div>
                     <div class="mediumImage ">
                         <img src="{{ asset('asset/img/Ellipse 2.png') }}" alt="mediumImage">
-
                     </div>
                 </div>
-
-
             </div>
         </section>
     </div>
