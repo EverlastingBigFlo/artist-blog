@@ -101,7 +101,7 @@
         <header>
             <div class="navBg sm:max-h-full md:max-h-full lg:max-h-full xl:max-h-full 2xl:max-h-full mt-16">
                 <div><a
-                        class=" text-5xl sm:text-[#49676E] text-red-50 hover:text-black pl-20 pt-20 transform translate-y-20"
+                        class=" text-5xl text-[#49676E] hover:text-black pl-20 pt-20 transform translate-y-20"
                         href="{{ asset('/') }}">LOGO</a></div>
             </div>
         </header>
@@ -111,7 +111,7 @@
             <div class="heroSection max-w-[80%] max-h-[80%] ">
                 <div class="largeBtn flex items-center gap-40  object-cover">
                     <div class="largeImage">
-                        <img src="{{ asset('asset/img/Ellipse 1.png') }}" alt="largeImage">
+                        <img src="{{ asset('asset/img/Ellipse 1.png') }}" alt="largeImage" class=" w-auto h-auto">
                     </div>
                     <div class="welcomeBtn">
                         <a class="
@@ -124,10 +124,10 @@
                 </div>
                 <div class="smallMed object-cover absolute top-[2rem] mx-[24rem] flex flex-col gap-52">
                     <div class="smallImage">
-                        <img src="{{ asset('asset/img/Ellipse 3.png') }}" alt="smallImage" class=" sm:w-lg md:object-cover ">
+                        <img src="{{ asset('asset/img/Ellipse 3.png') }}" alt="smallImage" class=" w-auto h-auto">
                     </div>
-                    <div class="mediumImage ">
-                        <img src="{{ asset('asset/img/Ellipse 2.png') }}" alt="mediumImage">
+                    <div class="mediumImage">
+                        <img src="{{ asset('asset/img/Ellipse 2.png') }}" alt="mediumImage" class="w-auto h-auto">
                     </div>
                 </div>
             </div>

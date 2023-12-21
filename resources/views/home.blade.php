@@ -8,8 +8,8 @@
 
         {{-- second image section --}}
         <div class="w-[72.875rem] h-[32.5rem] flex items-center justify-center gap-12 m-auto">
-            <img class=" max-w-full max-h-full" src="{{ asset('asset/img/Rectangle 6.png') }}" alt="">
-            <img class=" max-w-full max-h-full" src="{{ asset('asset/img/Rectangle 7.png') }}" alt="">
+            <img class=" " src="{{ asset('asset/img/Rectangle 6.png') }}" alt="">
+            <img class=" " src="{{ asset('asset/img/Rectangle 7.png') }}" alt="">
         </div>
     </section>
 
