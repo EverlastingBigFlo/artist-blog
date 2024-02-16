@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 
 class IndexCntroller extends Controller
 {
-    public function index()
+    public function welcome()
     {
         return view('welcome');
     }

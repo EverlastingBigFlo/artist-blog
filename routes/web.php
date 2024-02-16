@@ -1,9 +1,12 @@
 <?php
 
 use App\Http\Controllers\IndexCntroller;
+use App\Mail\SendMail;
 use GuzzleHttp\Middleware;
 use Illuminate\Auth\Events\Logout;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
+// use Illuminate\Support\Facades\Mail;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,9 +23,9 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', [IndexCntroller::class, 'index'])->name('index');
+// Route::get('/', [IndexCntroller::class, 'index'])->name('index');
 
-// Route::get('/welcome', [IndexCntroller::class, 'welcome'])->name('welcome');
+Route::get('/welcome', [IndexCntroller::class, 'welcome'])->name('welcome');
 
 Route::get('/home', [IndexCntroller::class, 'home'])->name('home');
 
@@ -54,3 +57,10 @@ Route::post('/login', [IndexCntroller::class, 'loginCommand'])->name('loginComma
 
 // Logout
 Route::get('/logout', [IndexCntroller::class, 'logout'])->name('logout');
+
+
+Route::get('mail',function(){
+    Mail::to('anjorin199@gmail.com')->send(new SendMail());
+    return 'Mail sent';
+});
+
