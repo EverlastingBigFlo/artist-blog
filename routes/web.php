@@ -59,8 +59,10 @@ Route::post('/login', [IndexCntroller::class, 'loginCommand'])->name('loginComma
 Route::get('/logout', [IndexCntroller::class, 'logout'])->name('logout');
 
 
+// send mail
 Route::get('mail',function(){
     Mail::to('anjorin199@gmail.com')->send(new SendMail());
     return 'Mail sent';
-});
+}
+);
 

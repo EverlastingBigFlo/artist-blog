@@ -49,7 +49,7 @@
                     {{-- password input --}}
                     <label for="password">Create Password*</label>
                     <div class="password-container">
-                        <input type="password" id="password" name="password" placeholder="Create a password"
+                        <input type="password" id="password" name="password" placeholder="Enter a password"
                             value="{{ old('password') }}">
                         <small style="color: red">
                             @error('password')
