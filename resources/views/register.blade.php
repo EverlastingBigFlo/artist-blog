@@ -62,7 +62,7 @@
                         <small style="color: red">
                             @error('password')
                                 {{ $message }}
-                            @enderror
+                            @enderror  
                         </small>
                         <span class="eye-icon" onclick="togglePasswordVisibility()">
                             <img src="{{ asset('asset/icons/mdi_eye.png') }}" alt="">
